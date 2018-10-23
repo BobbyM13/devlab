@@ -16,6 +16,8 @@
     line-height: 60px;
     margin: 5px;
     padding: 5px;
+    display: flex;
+    justify-content: space-between;
   }
   footer  {
     background-color: green;
@@ -30,7 +32,6 @@
     width: 200px;
     height: 45px;
     line-height: 45px;
-    float: left;
   }
   .cat-image {
     width: 30px;
@@ -45,7 +46,6 @@
   .rightnav {
     height: 40px;
     line-height: 40px;
-    float: right;
   }
   .row {
     display: flex; /* equal height of the children */
