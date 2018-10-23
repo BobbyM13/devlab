@@ -4,5 +4,35 @@
 }
 
 body {
+    background: #fff;
+}
+
+.heading {
+    width: 99%;
+    height: 70px;
     background: cornflowerblue;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.middle {
+    width: 99%;
+    height: 390px;
+    background: grey;
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+
+.footing {
+    width: 99%;
+    height: 70px;
+    background: green;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    display: flex;
+}
+
+.footing p {
+    margin: auto;
 }
