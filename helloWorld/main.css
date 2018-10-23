@@ -1,6 +1,8 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
+    font-weight: lighter;
 }
 
 body {
@@ -22,6 +24,12 @@ body {
     background: grey;
     margin: 0 auto;
     margin-bottom: 5px;
+    display: flex;
+}
+
+.middle div{
+    background: orange;
+    flex: 1 0 200px;
 }
 
 .footing {
