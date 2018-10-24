@@ -23,6 +23,9 @@
     background-color: green;
     text-align: center;
   }
+  footer p {
+    margin: auto;
+  }
   .b1 {
     margin: 5px;
     padding: 5px;
@@ -33,7 +36,7 @@
     height: 45px;
     line-height: 45px;
   }
-  .cat-image {
+  .kurt-image {
     width: 30px;
   }
   .title {
