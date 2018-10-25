@@ -1,0 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    background-image: url(https://cdn.vox-cdn.com/thumbor/gm3TzacwrCiN5ueaw7iH8mOQEps=/0x0:1600x900/1200x800/filters:focal(713x101:969x357)/cdn.vox-cdn.com/uploads/chorus_image/image/58833813/20180226_RAW_TripleH_Kurt_Angle__3940bae91a20bce35f88646423575503.0.jpg);
+    width: 100vw;
+    height: 50vh;
+}
