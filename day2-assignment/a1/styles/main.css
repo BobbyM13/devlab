@@ -1,11 +1,14 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 #wrapper {
-    width: 100vw;
+    width: 95vw;
     height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
 .hero {
@@ -20,12 +23,62 @@
 .banner {
     width: 100vw;
     height: 25vh;
-    background-color: rgba(0,255,56,0.9);
+    background-color: rgba(223,186,20,0.9);
     margin: auto;
     display: flex;
 }
 
 .hero h1{
     color: #fff;
+    margin: auto;
+}
+
+.middle {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left3 {
+    width: 250px;
+    height: 250px;
+    background-color: rgb(223, 186, 20);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.mid3 {
+    width: 250px;
+    height: 250px;
+    background-color: rgb(255, 94, 0);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.right3 {
+    width: 250px;
+    height: 250px;
+    background-color: rgb(223, 186, 20);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.middle a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    background-color: red;
+}
+
+.middle p {
+    margin: auto;
+    color: white;
+    background-color: blue;
+}
+
+.tags {
     margin: auto;
 }
