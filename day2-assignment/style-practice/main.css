@@ -1,9 +1,55 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 5px;
 }
 
 .one {
     width: 100%;
+    height: 80px;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.one p {
+    color: pink;
+}
+
+.two {
+    width: 100%;
     height: 200px;
+    border: 5px solid black;
+}
+
+.two ol {
+    margin-left: 40px;
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+.lione {
+    background-color: yellow;
+}
+
+.litwo {
+    background-color: lightblue;
+}
+
+.lithree {
+    background-color: green;
+}
+
+.lifour {
+    background-color: purple;
+}
+
+.lifive {
+    background-color: salmon;
 }
