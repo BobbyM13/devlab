@@ -1,0 +1,36 @@
+.my-Header {
+    background: #ccc;
+    text-align: center;
+}
+
+.col {
+    background-color: blue;
+}
+
+.row {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.myColGreen {
+    background-color: green;
+    height: 200px;
+}
+
+.myColOrange {
+    background-color: orange;
+}
+
+.myColRed {
+    background-color: red;
+}
+
+.myColBlue {
+    background-color: blue;
+}
+
+.myColPurple {
+    background-color: purple;
+    height: 20vh;
+}
