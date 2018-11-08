@@ -1,0 +1,25 @@
+.jumbotron {
+    margin-bottom: 0;
+}
+
+.carousel-item {
+    max-height: 800px !important;
+}
+
+.card-footer {
+    margin-top: 30px;
+    color: white !important;
+    text-align: center;
+}
+
+.container {
+    margin-top: 30px;
+}
+
+.centre {
+    display: flex;
+}
+
+.centre-child {
+    margin: auto;
+}
