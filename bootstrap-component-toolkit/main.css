@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .jumbotron {
     margin-bottom: 0;
 }
@@ -32,4 +36,33 @@
     width: 70%;
     display: flex;
     justify-content: space-around;
+}
+
+.scrollz {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.breadcrumb {
+    background: none;
+    margin-left: -32px;
+}
+
+.toolTipz {
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.toolTipz button {
+    margin-right: 50px;
+}
+
+.toolTipz button:nth-child(4) {
+    margin-right: 0px;
 }
