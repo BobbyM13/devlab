@@ -2,12 +2,15 @@
     margin-bottom: 0;
 }
 
+.jumbotron-fluid {
+    background-color: rgb(94, 170, 233);
+}
+
 .carousel-item {
     max-height: 800px !important;
 }
 
 .card-footer {
-    margin-top: 30px;
     color: white !important;
     text-align: center;
 }
@@ -22,4 +25,11 @@
 
 .centre-child {
     margin: auto;
+}
+
+.cardz {
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
 }
