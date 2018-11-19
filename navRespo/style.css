@@ -1,0 +1,114 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+nav {
+	width: 100%;
+}
+
+.navLinks {
+	display: flex;
+	justify-content: flex-end;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+}
+
+ul li {
+	position: relative;
+	list-style: none;
+	display: inline-block;
+	padding: 20px;
+	transition: background-color .8s;
+}
+
+ul li:hover {
+	background-color: cornflowerblue;
+	transition: background-color .8s;
+}
+
+nav ul li ul {
+	position: absolute;
+	left: 0;
+	margin-top: 19px;
+	display: none;
+}
+
+nav ul li:hover ul {
+	display: block;
+}
+
+nav ul li.open ul {
+	display: block;
+}
+
+nav ul li ul li{
+	display: block;
+	width: 100px;
+}
+
+ul li a {
+	color: black;
+	text-decoration: none;
+}
+
+ul li a:hover {
+	color: white;
+	transition: color .2s;
+}
+
+.toggle {
+	width: 100%;
+	padding: 10px 20px;
+	background: #001f44;
+	text-align: right;
+	box-sizing: border-box;
+	color: #fff;
+	font-size: 30px;
+	display: none;
+}
+
+@media screen and (max-width: 768px) {
+	.toggle {
+		display: block;
+	}
+
+	ul {
+		width: 100%;
+	}
+
+	ul li {
+		display: block;
+		text-align: center;
+	}
+
+	li a{
+    	display:block;
+	}
+
+	#respNav {
+		display: none;
+	}
+
+	#respNav.open {
+		display: block;
+	}
+
+	nav ul li:hover ul {
+		position: relative;
+		background-color: royalblue;
+	}
+
+	nav ul li ul li {
+		border-bottom: 3px solid cornflowerblue;
+		width: 100%;
+	}
+
+	/*nav ul li ul a {
+		margin-left: -50px;
+	}*/
+}

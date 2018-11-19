@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width">
+		<title>Responsive Menu</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+	</head>
+	<body>
+		
+		<nav>
+			<div class="toggle">
+				<i class="fas fa-bars" id="hamburger"></i>
+			</div>
+			<div class="navLinks">
+				<ul id="respNav">
+					<li><a href="https://www.ign.com" target="_blank">Home</a></li>
+					<li class="sub-menu"><a href="#">About &#9662;</a>
+						<ul>
+							<li><a href="#">Link 1</a></li>
+							<li><a href="#">Link 2</a></li>
+							<li><a href="#">Link 3</a></li>
+							<li><a href="#">Link 4</a></li>
+						</ul>
+					</li>
+					<li><a href="https://www.polygon.com" target="_blank">Services</a></li>
+					<li><a href="https://www.reddit.com" target="_blank">Portfolio</a></li>
+					<li><a href="https://www.youtube.com" target="_blank">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<script type="text/javascript">
+		const hamburger = document.getElementById("hamburger");
+		const responsiveNav = document.getElementById("respNav");
+
+		hamburger.addEventListener('click', function(){
+			if(responsiveNav.className == "open") {
+			//Shrink the Box
+			responsiveNav.className = "";
+			} else {
+			//Open the Box
+			responsiveNav.className = "open";
+			}
+		});
+		</script>
+	</body>
+</html>
