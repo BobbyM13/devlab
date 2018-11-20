@@ -22,7 +22,6 @@ ul li {
 	position: relative;
 	list-style: none;
 	display: inline-block;
-	padding: 20px;
 	transition: background-color .8s;
 }
 
@@ -34,7 +33,6 @@ ul li:hover {
 nav ul li ul {
 	position: absolute;
 	left: 0;
-	margin-top: 19px;
 	display: none;
 }
 
@@ -54,7 +52,9 @@ nav ul li ul li{
 ul li a {
 	color: black;
 	text-decoration: none;
-	display:block
+	display:block;
+	padding: 20px;
+	transition: color .2s;
 }
 
 ul li a:hover {
