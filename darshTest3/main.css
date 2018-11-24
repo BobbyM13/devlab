@@ -155,16 +155,6 @@ section.hero {
         color: #000;
     }
 
-    #openBtn {
-        display: block;
-        top: 26px;
-        right: 9px;
-        position: fixed;
-        font-size: 24px;
-        color: white;
-        padding: 20px;
-    }
-
     .closeBtn {
         display: block;
     }
@@ -190,14 +180,47 @@ section.hero {
         display: block;
     }
 
+    .mobileHamburger {
+        width: 100%;
+        height: 20vh;
+        top: 0;
+        position: fixed;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    #openBtn {
+        display: block;
+        font-size: 24px;
+        color: white;
+        padding: 15px 25px;
+    }
+
     .mobileNavUpper {
         width: 100%;
         height: 20vh;
         display: flex;
         justify-content: space-between;
-        flex-direction: row;
-        margin-bottom: 10vh;
-        padding: 50px;
+        margin-bottom: 5vh;
+        /* background-color: red; */
+    }
+
+    .upperLeftNav {
+        /* background-color: red; */
+        height: 20vh;
+        width: 100%;
+        flex: 1;
+        padding: 15px 20px;
+    }
+
+    .upperRightNav {
+        /* background-color: blue; */
+        height: 20vh;
+        width: 100%;
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        padding: 15px 45px;
     }
 
     .mobileNavUpper a {
@@ -215,6 +238,7 @@ section.hero {
         height: 60vh;
         display: flex;
         flex-direction: column;
+        /* background-color: blue; */
     }
 
     .mobileNavLower div{
