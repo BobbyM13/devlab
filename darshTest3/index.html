@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Darsh Test 3</title>
+
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
+    <!-- <script src="main.js"></script> -->
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <div id="fun">
+            <div class="mobileNavUpper">
+                <a href="#">Darsh Site</a>
+                <a href="#" class="closeBtn" onclick="closeNav()">X</a>
+            </div>
+            <div class="mobileNavLower">
+                    <div><a href="#aboutSection">About</a></div>
+                    <div><a href="#projectsSection">Projects</a></div>
+                    <div><a href="#">Contact</a></div>
+            </div>
+        </div>
+
+        <a href="#" id="openBtn" onclick="openNav()">&#9776;</a>
+    
+       <nav id="colorNav">
+            <div class="logo">Darsh Site</div>
+            <ul>
+                <li><a href="#aboutSection">About</a></li>
+                <li id="projects"><a href="#projectsSection">Projects &#9662;</a>
+                    <ul id="subNav">
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+       </nav>
+        
+        <section class="hero"></section>
+        
+        <section class="content">
+            <h1 id="aboutSection">About</h1>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat iusto quia itaque ex neque! Delectus, eaque quis
+                at sapiente commodi, repudiandae fugit obcaecati nisi quisquam sint, doloribus quas. Consequatur, esse.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat iusto quia itaque ex neque! Delectus, eaque quis
+                at sapiente commodi, repudiandae fugit obcaecati nisi quisquam sint, doloribus quas. Consequatur, esse.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat iusto quia itaque ex neque! Delectus, eaque quis
+                at sapiente commodi, repudiandae fugit obcaecati nisi quisquam sint, doloribus quas. Consequatur, esse.
+            </p>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat iusto quia itaque ex neque! Delectus, eaque quis
+                at sapiente commodi, repudiandae fugit obcaecati nisi quisquam sint, doloribus quas. Consequatur, esse.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat iusto quia itaque ex neque! Delectus, eaque quis
+                at sapiente commodi, repudiandae fugit obcaecati nisi quisquam sint, doloribus quas. Consequatur, esse.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat iusto quia itaque ex neque! Delectus, eaque quis
+                at sapiente commodi, repudiandae fugit obcaecati nisi quisquam sint, doloribus quas. Consequatur, esse.
+             </p>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat iusto quia itaque ex neque! Delectus, eaque quis
+                at sapiente commodi, repudiandae fugit obcaecati nisi quisquam sint, doloribus quas. Consequatur, esse.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat iusto quia itaque ex neque! Delectus, eaque quis
+                at sapiente commodi, repudiandae fugit obcaecati nisi quisquam sint, doloribus quas. Consequatur, esse.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat iusto quia itaque ex neque! Delectus, eaque quis
+                at sapiente commodi, repudiandae fugit obcaecati nisi quisquam sint, doloribus quas. Consequatur, esse.
+            </p>
+
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat iusto quia itaque ex neque! Delectus, eaque quis
+                at sapiente commodi, repudiandae fugit obcaecati nisi quisquam sint, doloribus quas. Consequatur, esse.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat iusto quia itaque ex neque! Delectus, eaque quis
+                at sapiente commodi, repudiandae fugit obcaecati nisi quisquam sint, doloribus quas. Consequatur, esse.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat iusto quia itaque ex neque! Delectus, eaque quis
+                at sapiente commodi, repudiandae fugit obcaecati nisi quisquam sint, doloribus quas. Consequatur, esse.
+            </p>
+
+
+            <h1 id="projectsSection">Projects</h1>
+        </section>
+
+    </div>
+    
+
+    <script type="text/javascript">
+
+        const navColor = document.getElementById("colorNav");
+        const subNav = document.getElementById("hiddenEle");
+
+        window.addEventListener('scroll', () => {
+            const scrolled = window.scrollY;
+    
+            console.log(scrolled);
+
+            if (scrollY > 300) {
+                navColor.style.backgroundColor = "white";
+                navColor.classList.add("black");
+                navColor.style.transition = ".2s";
+            } else {
+                navColor.style.backgroundColor = "";
+                navColor.classList.remove("black");
+                navColor.style.transition = ".2s";
+            }
+        });
+
+        document.getElementById('projects').addEventListener('mouseenter', openMenu);
+
+        function openMenu() {
+            document.getElementById('subNav').classList.toggle('active');
+        };
+
+        document.getElementById('projects').addEventListener('mouseleave', closeMenu);
+
+        function closeMenu() {
+            document.getElementById('subNav').classList.toggle('active');
+        };
+
+        function openNav() {
+            document.getElementById('fun').style.display = "block";
+
+            if (window.innerWidth < 768 && document.getElementById('fun').style.display == "block") {
+                document.getElementById('openBtn').style.display = "none";
+            }
+        };
+
+        function closeNav() {
+            document.getElementById('fun').style.display = "none";
+
+            if (window.innerWidth < 768 && document.getElementById('fun').style.display == "none") {
+                document.getElementById('openBtn').style.display = "block";
+            }
+        };
+
+    </script>
+        
+</body>
+</html>
