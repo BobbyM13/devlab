@@ -167,13 +167,14 @@ section.hero {
     #fun {
         display: block;
         position: fixed;
-        width: 100vw;
+        width: 0%;
         height: 100vh;
+        overflow: hidden;
         top: 0;
         opacity: 0.9;
         background-color: white;
         z-index: 9999;
-        display: none;
+        transition: all .5s;
     }
 
     #fun.active {

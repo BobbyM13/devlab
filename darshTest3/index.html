@@ -126,17 +126,17 @@
         };
 
         function openNav() {
-            document.getElementById('fun').style.display = "block";
+            document.getElementById('fun').style.width = "100%";
 
-            if (window.innerWidth < 768 && document.getElementById('fun').style.display == "block") {
+            if (window.innerWidth < 768 && document.getElementById('fun').style.width == "0") {
                 document.getElementById('openBtn').style.display = "none";
             }
         };
 
         function closeNav() {
-            document.getElementById('fun').style.display = "none";
+            document.getElementById('fun').style.width = "0";
 
-            if (window.innerWidth < 768 && document.getElementById('fun').style.display == "none") {
+            if (window.innerWidth < 768 && document.getElementById('fun').style.width == "0") {
                 document.getElementById('openBtn').style.display = "block";
             }
         };
