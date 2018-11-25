@@ -209,7 +209,7 @@ section.hero {
     .upperLeftNav {
         /* background-color: red; */
         height: 20vh;
-        width: 100%;
+        min-width: 200px;
         flex: 1;
         padding: 15px 20px;
     }
