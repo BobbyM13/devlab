@@ -198,6 +198,37 @@ section.hero {
 
 @media screen and (max-width: 768px) {
 
+    .transformer {
+        display: inline-block;
+        z-index: 10000;
+    }
+    
+    .bar1,.bar2,.bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: #000;
+        margin: 6px 0;
+    }
+
+    .barz1,.barz2,.barz3 {
+        width: 35px;
+        height: 5px;
+        background-color: #000;
+        margin: 6px 0;
+    }
+
+    .barz1 {
+        transform: rotate(-45deg) translate(-9px, 6px);
+    }
+
+    .barz3 {
+        transform: rotate(45deg) translate(-8px, -8px);
+    }
+
+    .barz2 {
+        opacity: 0;
+    }
+
     a {
         list-style: none;
         text-decoration: none;
@@ -232,7 +263,7 @@ section.hero {
 
     .mobileHamburger {
         width: 100%;
-        height: 20vh;
+        height: 10vh;
         top: 0;
         position: fixed;
         display: flex;
@@ -270,7 +301,7 @@ section.hero {
         flex: 1;
         display: flex;
         justify-content: flex-end;
-        padding: 15px 32px;
+        padding: 15px 20px;
     }
 
     .mobileNavUpper a {

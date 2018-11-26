@@ -19,7 +19,15 @@
         <div id="fun">
             <div class="mobileNavUpper">
                 <div class="upperLeftNav"><a href="#">Darsh Site</a></div>
-                <div class="upperRightNav"><a href="#" class="closeBtn" onclick="closeNav()">X</a></div>
+                <div class="upperRightNav">
+                    <a href="#" class="closeBtn" onclick="closeNav()">
+                        <div class="transfomer2">
+                            <div class="barz1"></div>
+                            <div class="barz2"></div>
+                            <div class="barz3"></div>
+                        </div>
+                    </a>
+            </div>
             </div>
             <div class="mobileNavLower">
                     <div><a href="#aboutSection">About</a></div>
@@ -29,7 +37,12 @@
         </div>
 
         <div class="mobileHamburger">
-            <a href="#" id="openBtn" onclick="openNav()">&#9776;</a>
+            <a href="#" id="openBtn" onclick="openNav()">
+                <div class="transfomer">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div></a>
         </div>
     
        <nav id="colorNav">
@@ -139,18 +152,12 @@
 
         function openNav() {
             document.getElementById('fun').style.width = "100%";
-
-            if (window.innerWidth < 768 && document.getElementById('fun').style.width == "0") {
-                document.getElementById('openBtn').style.display = "none";
-            }
+            document.getElementById('openBtn').style.opacity = "0";
         };
 
         function closeNav() {
             document.getElementById('fun').style.width = "0";
-
-            if (window.innerWidth < 768 && document.getElementById('fun').style.width == "0") {
-                document.getElementById('openBtn').style.display = "block";
-            }
+            document.getElementById('openBtn').style.opacity = "1";
         };
 
     </script>
