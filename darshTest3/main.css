@@ -38,6 +38,16 @@ nav .logo {
     color: #fff;
 }
 
+#firstLie {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#lastLie {
+    display: flex;
+    justify-content: flex-start;
+}
+
 nav.black .logo {
     color: #000;
 }
@@ -51,16 +61,20 @@ nav ul {
 
 nav ul li {
     list-style: none;
+    min-width: 173px;
+    /* background-color: blue; */
+    text-align: center;
 }
 
 nav ul li a {
     line-height: 80px;
     color: #f7f5f5;
-    padding: 12px 30px;
+    /* padding: 12px 30px; */
     text-decoration: none;
     text-transform: uppercase;
     transition: .3s ease;
 }
+
 
 nav ul li ul {
     display: flex;
@@ -70,17 +84,17 @@ nav ul li ul {
     margin-top: -6px;
 }
 
-/* #projects ul li {
-    display: none;
+#projects {
+    /* background: red; */
+    text-align: center;
 }
 
-#projects:hover ul li {
-    display: block;
-} */
+#projects a {
+    padding-bottom: 21.4px;
+}
 
 #subNav {
     display: none;
-    min-width: 75px;
 }
 
 #subNav.active {
@@ -198,6 +212,10 @@ section.hero {
 
 @media screen and (max-width: 768px) {
 
+    section.hero {
+        height: 50vh;
+    }
+
     .transformer {
         display: inline-block;
         z-index: 10000;
@@ -222,6 +240,7 @@ section.hero {
     }
 
     .barz3 {
+        margin-left: -2px;
         transform: rotate(45deg) translate(-8px, -8px);
     }
 

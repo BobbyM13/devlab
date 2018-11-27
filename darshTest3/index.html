@@ -18,9 +18,9 @@
 
         <div id="fun">
             <div class="mobileNavUpper">
-                <div class="upperLeftNav"><a href="#">Darsh Site</a></div>
+                <div class="upperLeftNav"><a href="#" onclick="closeNav()">Robert M Site</a></div>
                 <div class="upperRightNav">
-                    <a href="#" class="closeBtn" onclick="closeNav()">
+                    <a class="closeBtn" onclick="closeNav()">
                         <div class="transfomer2">
                             <div class="barz1"></div>
                             <div class="barz2"></div>
@@ -30,14 +30,14 @@
             </div>
             </div>
             <div class="mobileNavLower">
-                    <div><a href="#aboutSection">About</a></div>
-                    <div><a href="#projectsSection">Projects</a></div>
+                    <div><a href="#aboutSection" onclick="closeNav()">About</a></div>
+                    <div><a href="#projectsSection" onclick="closeNav()">Projects</a></div>
                     <div><a href="#">Contact</a></div>
             </div>
         </div>
 
         <div class="mobileHamburger">
-            <a href="#" id="openBtn" onclick="openNav()">
+            <a id="openBtn" onclick="openNav()">
                 <div class="transfomer">
                     <div class="bar1"></div>
                     <div class="bar2"></div>
@@ -46,17 +46,17 @@
         </div>
     
        <nav id="colorNav">
-            <div class="logo">Darsh Site</div>
+            <div class="logo">Robert M Site</div>
             <ul>
-                <li><a href="#aboutSection">About</a></li>
+                <li id="firstLie"><a href="#aboutSection">About</a></li>
                 <li id="projects"><a href="#projectsSection">Projects &#9662;</a>
                     <ul id="subNav">
-                        <li><a href="#">Link 1</a></li>
-                        <li><a href="#">Link 2</a></li>
-                        <li><a href="#">Link 3</a></li>
+                        <li><a href="#">Amazon</a></li>
+                        <li><a href="#">Truck Stop</a></li>
+                        <li><a href="#">Arab Cowboy</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Contact</a></li>
+                <li id="lastLie"><a href="#">Contact</a></li>
             </ul>
        </nav>
         
@@ -105,7 +105,7 @@
 
             <section class="v-header container">
                 <div class="fullVideo">
-                    <video src="people.mp4" autoplay="true" loop="true" autoplay muted></video>
+                    <video src="people.mp4" autoplay="true" loop="true"></video>
                 </div>
                 <div class="videoOverlay"></div>
                 <div class="videoContent">
