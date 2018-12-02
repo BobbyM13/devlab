@@ -3,12 +3,250 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Welcome to Billy Bob Studios</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Billy Bob Design</title>
+
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
+    <!-- <script src="main.js"></script> -->
 </head>
 <body>
-    <h1>Kept you waiting, huh?</h1>
+
+    <div class="wrapper">
+
+        <div id="fun">
+            <div class="mobileNavUpper">
+                <div class="upperLeftNav"><a href="#" onclick="closeNav()">Billy Bob Designs</a></div>
+                <div class="upperRightNav">
+                    <a class="closeBtn" onclick="closeNav()">
+                        <div class="transfomer2">
+                            <div class="barz1"></div>
+                            <div class="barz2"></div>
+                            <div class="barz3"></div>
+                        </div>
+                    </a>
+            </div>
+            </div>
+            <div class="mobileNavLower">
+                    <div><a href="#aboutSection" onclick="closeNav()">About</a></div>
+                    <div><a href="#projectsSection" onclick="closeNav()">Projects</a></div>
+                    <div><a href="#">Contact</a></div>
+            </div>
+        </div>
+
+        <div class="mobileHamburger">
+            <a id="openBtn" onclick="openNav()">
+                <div class="transfomer">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div></a>
+        </div>
+    
+       <nav id="colorNav">
+            <div class="logo"><a href="index.html">Billy Bob Designs</a></div>
+            <ul>
+                <li id="firstLie"><a href="#aboutSection">About</a></li>
+                <li id="secondLie"><a href="#proecssSection">Process</a></li>
+                <li id="projects"><a href="#projectsSection">Projects &#9662;</a>
+                    <ul id="subNav">
+                        <li><a href="crave.html">Crave</a></li>
+                        <li><a href="#">Amazon</a></li>
+                        <li><a href="#">Project 3</a></li>
+                    </ul>
+                </li>
+                <li id="lastLie"><a href="#contactSection">Contact</a></li>
+            </ul>
+       </nav>
+        
+        <section class="hero"></section>
+        
+        <section class="content">
+            <div id="aboutSection"></div>
+            <div class="aboutz">
+                    <h1>About</h1>
+                    <p>
+                        My name is Robert Maurice, I am a UX/UI designer.
+                        <br>
+                        I've got a lot to talk about, but I don't want to bore you on the landing page.
+                        <br>
+                        If you want to learn more about me, click below.
+                    </p>
+                    <button class="aboutMe">Learn More</button>
+            </div>
+
+            <section class="wrapper2">
+
+                <div id="proecssSection"></div>
+                <h1 class="processz">Design Process</h1>
+                <p>
+                    Below are the individual pieces that make up my design process.
+                    <br>
+                </p>
+
+                <form id="search-books">
+                    <input type="text" placeholder="looking for anything in particular?" />
+                </form>
+        
+                <div class="flexer">
+                    <a href="#">
+                        <span class="personas">
+                            <h1>Personas</h1>
+                        </span>
+                    </a>
+                    <a href="#">
+                        <span class="wireframes">
+                            <h1>Wireframes</h1>
+                        </span>
+                    </a>
+                    <a href="#">
+                        <span class="journeyMaps">
+                            <h1>Journey Maps</h1>
+                        </span>
+                    </a>
+                    <a href="#">
+                        <span class="storyBoards">
+                            <h1>Storyboards</h1>
+                        </span>
+                    </a>
+                    <a href="#">
+                        <span class="empathy">
+                            <h1>Empathy Maps</h1>
+                        </span>
+                    </a>
+                    <a href="#">
+                        <span class="highres">
+                            <h1>High Res Comps</h1>
+                        </span>
+                    </a>
+                </div>
+             </section>
+
+             <div class="projectz">
+                    <div id="projectsSection"></div>
+                    <h1 class="procssez">My Projects</h1>
+                    <p>
+                        Below are some of my projects/case studies. More will come in the future!
+                        <br>
+                    </p>
+                    <div class="flexer2">
+                            <a href="crave.html">
+                                <span class="crave"></span>
+                            </a>
+                            <a href="#">
+                                <span class="amazon"> </span>
+                            </a>
+                    </div>
+             </div>
+
+             <div class="contactz">
+                    <h1 id="contactSection">Contact</h1>
+                    <div class="contactFields">
+                        <span class="contactForm">
+                            <form action="https://formspree.io/mackie.maurice@gmail.com" method="POST">
+                                <input type="email" name="_replyto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"><br>
+                                <label for="exampleInputEmail1">What's your email address?</label>
+                                <br>
+                                <textarea class="resizer" type="textarea" name="message" placeholder="let's get in contact"></textarea><br>
+                                <label for="exampleInputEmail1">Feel free to leave me feedback.</label>
+                                <br>
+                                <input type="submit" value="Send">
+                              </form>
+                        </span>
+                        <div class="contactInfo">
+                            <div class="linkIn">
+                                    <h4>Link with me here</h4>
+                                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                            <div>
+                                    <h4>Text/Call Me Here</h4>
+                                    <p>682-888-9042</p>
+                            </div>
+                            <div>
+                                    <h4>Email Me Here (or use the form to the left)</h4>
+                                    <p>mackie.maurice@gmail.com</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+            </div>
+
+            <!-- <section class="v-header container">
+                <div class="fullVideo">
+                    <video src="people.mp4" autoplay="true" loop="true"></video>
+                </div>
+                <div class="videoOverlay"></div>
+                <div class="videoContent">
+                    <h1>I am a UX/UI Designer</h1>
+                </div>
+            </section> -->
+        </section>
+    </div>
+    
+
+    <script type="text/javascript">
+
+        const navColor = document.getElementById("colorNav");
+        const subNav = document.getElementById("hiddenEle");
+
+        window.addEventListener('scroll', () => {
+            const scrolled = window.scrollY;
+    
+            console.log(scrolled);
+
+            if (scrollY > 300) {
+                navColor.style.backgroundColor = "white";
+                navColor.classList.add("black");
+                navColor.style.transition = ".2s";
+            } else {
+                navColor.style.backgroundColor = "";
+                navColor.classList.remove("black");
+                navColor.style.transition = ".2s";
+            }
+        });
+
+        document.getElementById('projects').addEventListener('mouseenter', openMenu);
+
+        function openMenu() {
+            document.getElementById('subNav').classList.toggle('active');
+        };
+
+        document.getElementById('projects').addEventListener('mouseleave', closeMenu);
+
+        function closeMenu() {
+            document.getElementById('subNav').classList.toggle('active');
+        };
+
+        function openNav() {
+            document.getElementById('fun').style.width = "100%";
+            document.getElementById('openBtn').style.opacity = "0";
+        };
+
+        function closeNav() {
+            document.getElementById('fun').style.width = "0";
+            document.getElementById('openBtn').style.opacity = "1";
+        };
+
+        const list = document.querySelector('.flexer');
+        const searchBar = document.forms['search-books'].querySelector('input');
+
+        searchBar.addEventListener('keyup', function(e){
+            const term = e.target.value.toLowerCase();
+            const books = list.getElementsByTagName('a');
+            Array.from(books).forEach(function(book){
+                const title = book.firstElementChild.textContent;
+                if(title.toLowerCase().indexOf(term) != -1){
+                    book.style.display = "block";
+                } else {
+                    book.style.display = "none";
+                }
+            });
+        });
+
+    </script>
+        
 </body>
 </html>
