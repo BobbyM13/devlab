@@ -23,7 +23,7 @@ h1 {
 
 .logo a {
     text-decoration: none;
-    color: white;
+    color: #000;
 }
 
 nav {
@@ -50,7 +50,7 @@ nav .logo {
     height: 80px;
     font-size: 24px;
     transition: .3s ease;
-    color: #fff;
+    color: #000;
 }
 
 nav.black .logo {
@@ -159,23 +159,25 @@ section.hero {
 
 .content {
     width: 100%;
-    height: 2000px;
-    display: flex;
-    justify-content: space-between;
+    height: 100%;
+    /* display: flex;
+    justify-content: space-between; */
 }
 
-.sideNav {
+/* .sideNav {
     width: 30%;
     height: 500px;
     position: sticky;
     top: 10px;
     background-color: red;
-}
+} */
 
 .infoSect {
-    width: 69%;
+    width: 80%;
     height: 4000px;
     padding: 15px;
+    padding-left: 250px;
+    margin: 0 auto;
 }
 
 .infoSect p {
@@ -192,28 +194,95 @@ section.hero {
     width: 100%;
     height: 400px;
     background: url("images/survey.jpg") no-repeat;
-    background-size: 95%;
+    background-size: 75%;
 }
 
 .results2 {
     width: 100%;
     height: 400px;
     background: url("images/survey2.jpg") no-repeat;
-    background-size: 95%;
+    background-size: 75%;
 }
 
 .problem {
     width: 100%;
     height: 400px;
     background: url("images/craveProblem.png") no-repeat;
-    background-size: cover;
+    background-size: 75%;
 }
 
 .trent {
     width: 100%;
-    height: 543px;
+    height: 423px;
     background: url("images/trentM.png") no-repeat;
-    background-size: 100%;
+    background-size: 75%;
+}
+
+.trentEmpath {
+    width: 100%;
+    height: 525px;
+    background: url("images/trentEmpathy.png") no-repeat;
+    background-size: 75%;
+}
+
+.trentStory {
+    width: 100%;
+    height: 530px;
+    background: url("images/craveStory.png") no-repeat;
+    background-size: 75%;
+}
+
+.trentJourney {
+    width: 100%;
+    height: 550px;
+    background: url("images/craveJourney.jpg") no-repeat;
+    background-size: 75%;
+}
+
+.trentFlow {
+    width: 100%;
+    height: 100%;
+    background: url("images/craveFlow.png") no-repeat;
+    background-size: 60%;
+}
+
+.trentFrames1 {
+    width: 100%;
+    height: 400px;
+    background: url("images/craveFrames1.JPG") no-repeat;
+    background-size: 75%;
+}
+
+.trentFrames2 {
+    width: 100%;
+    height: 500px;
+    background: url("images/craveFrames2.JPG") no-repeat;
+    background-size: 75%;
+}
+
+.craveFlow1 {
+    width: 100%;
+    height: 231px;
+    background: url("images/craveFlow1.JPG") no-repeat;
+    background-size: 75%;
+}
+
+.craveFlow2 {
+    width: 100%;
+    height: 231px;
+    background: url("images/craveFlow2.JPG") no-repeat;
+    background-size: 75%;
+}
+
+.craveFlow3 {
+    width: 100%;
+    height: 231px;
+    background: url("images/craveFlow3.JPG") no-repeat;
+    background-size: 75%;
+}
+
+ul li {
+    list-style: none;
 }
 
 #fun {
