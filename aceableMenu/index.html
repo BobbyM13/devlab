@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Aceable Nav Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+<body>
+    
+    <section class="wrapper">
+        <div id="navBar">
+            <i class="fas fa-home"></i>
+            <a><i class="fas fa-list-ul"></i></a>
+            <a><i class="fas fa-play-circle"></i></a>
+            <a><i class="fas fa-book"></i></a>
+            <a><i class="fas fa-bookmark"></i></a>
+            <a><i class="fas fa-book-open"></i></a>
+            <a><i class="fas fa-award"></i></a>
+            <a><i class="fas fa-user"></i></a>
+            <a><i class="fas fa-question-circle"></i></a>
+        </div>
+        <div id="navBarText">
+            <p><a>Home</a></p>
+            <p><a>Checklist</a></p>
+            <p><a>Resume Course</a></p>
+            <p><a>Table of Contents</a></p>
+            <p><a>Progress Log</a></p>
+            <p><a>Study Tools</a></p>
+            <p class="gold"><a>Certificates</a></p>
+            <p><a>Profile</a></p>
+            <p><a>Help</a></p>
+        </div>
+        <div class="mainImage"></div>
+    </section>
+
+    <script>
+    const icons = document.getElementById('navBar');
+    const words = document.getElementById('navBarText');
+    const first = document.getElementsByClassName("one");
+
+    icons.addEventListener('mouseenter', () => {
+        document.getElementById('navBarText').style.width = "190px";
+     });
+
+     words.addEventListener('mouseleave', () => {
+         document.getElementById('navBarText').style.width = "0";
+     });
+
+    first.addEventListener('mouseenter', () => {
+        document.getElementsByClassName('one').style.color = "red";
+    });
+    
+    </script>
+</body>
+</html>
