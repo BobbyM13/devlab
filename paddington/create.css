@@ -5,10 +5,6 @@
 	box-sizing: border-box;
 }
 
-a {
-	text-decoration: none;
-}
-
 @media only screen and (max-width: 376px) {
   
   body {
@@ -68,15 +64,10 @@ a {
   	margin-bottom: 25px;
   }
 
-  .loginFo button:nth-child(odd) {
-  	color: #7fbee8;
-  	margin-top: 25px;
-  }
-
-  .loginFo button:nth-child(even) {
+  .loginFo button {
   	color: #fff;
-  	border: 2px solid rgb(255, 51, 153);
-  	background-color: rgb(255, 51, 153);
+  	border: 2px solid rgb(255, 0, 127);
+  	background-color: rgb(255, 0, 127);
   }
 
   input {
