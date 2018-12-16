@@ -1,0 +1,163 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Source Sans Pro', sans-serif;
+	box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+}
+
+@media only screen and (max-width: 376px) {
+  
+  body {
+    background-color: #7fbee8;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  	width: 100vw;
+  	height: 100vh;
+  }
+
+  .verification {
+  	background-color: #fff;
+  	width: 100vw;
+    height: 100vh;
+  	display: flex;
+    flex-direction: column;
+  }
+
+  .box {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+  }
+
+  .one {
+      width: 100%;
+      height: 100px;
+      padding: 10px 15px;
+      color: #243672;
+      text-align: center;
+  }
+
+  .one a {
+      color: #7fbee8;
+  }
+
+  .two {
+    width: 100%;
+    padding: 15px;
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .two a {
+    min-width: 40%;
+    margin-right: 15px;
+    height: 70px;
+    margin: 0 auto;
+  }
+
+  .two .first {
+      background: url("../images/nelnet.png") no-repeat;
+      background-size: cover;
+  }
+
+  .two .second {
+    background: url("../images/navient.png") no-repeat;
+    background-size: contain;
+    background-position-y: 23px;
+  }
+
+  .two .third {
+    background: url("../images/lakes.jpg") no-repeat;
+    background-size: cover;
+    background-position-y: -15px;
+  }
+
+  .two .fourth {
+    background: url("../images/fedloan.png") no-repeat;
+    background-size: contain;
+    background-position-y: 5px;
+  }
+
+  .two .fifth {
+    background: url("../images/sofi.png") no-repeat;
+    background-size: contain;
+    background-position-y: 10px;
+  }
+
+  .two .sixth {
+    background: url("../images/aes.png") no-repeat;
+    background-size: cover;
+  }
+
+  .two .seventh {
+    background: url("../images/mohela.png") no-repeat;
+    background-size: contain;
+    background-position-y: 10px;
+  }
+
+  .two .eighth {
+    background: url("../images/boa.png") no-repeat;
+    background-size: contain;
+    background-position-y: 10px;
+  }
+
+  .two .ninth {
+    background: url("../images/fargo.png") no-repeat;
+    background-size: contain;
+    background-position-x: 35px;
+  }
+
+  .two .tenth {
+    background: url("../images/citi.png") no-repeat;
+    background-size: contain;
+    background-position-y: 15px;
+  }
+
+  .two a:focus {
+      border: 2px solid red;
+  }
+
+  .three {
+      width: 100%;
+      height: 70px;
+      display: flex;
+  }
+
+  button {
+    width: 90%;
+    height: 35px;
+  	padding: 5px;
+  	font-size: 18px;
+
+  	background-color: #fff;
+  	border: 2px solid #7fbee8;
+    border-radius: 6px;
+      
+    margin: auto;
+  }
+
+  button {
+      color: #fff;
+  	  border: 2px solid rgb(255, 0, 127);
+  	  background-color: rgb(255, 0, 127);
+  }
+
+  button a {
+      color: #fff;
+  }
+}
