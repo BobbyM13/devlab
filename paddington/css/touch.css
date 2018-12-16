@@ -7,7 +7,7 @@
 
 a {
     text-decoration: none;
-    color: #fff;
+    color: #000;
 }
 
 @media only screen and (max-width: 376px) {
@@ -24,9 +24,9 @@ a {
   	height: 100vh;
   }
 
-  .signUp {
+  .verification {
   	background-color: #fff;
-  	border-top-right-radius: 96px;
+  	/* border-top-right-radius: 96px; */
   	width: 100vw;
   	height: 100vh;
   	display: flex;
@@ -38,46 +38,83 @@ a {
   	margin-top: 15px;
   } */
 
-  .loginFo {
+  .verinFo {
   	width: 100%;
   	height: 100%;
   	/*background-color: red;*/
   	padding: 30px;
   	display: flex;
   	flex-direction: column;
-      margin: auto;
-      margin-top: 50px;
+    margin: auto;
   }
 
   .upper {
       width: 100%;
-      padding: 30px;
+      padding-top: 30px;
       display: flex;
       flex-direction: column;
       margin-top: 50px;
   }
 
-  .upper img, h2 {
+  .bar {
+     width: 60%;
+     height: 70px;
+     padding-bottom: 5px;
+     background: #7fbee8;
+     border-top-right-radius: 16px;
+     border-bottom-right-radius: 16px;
+     display: flex;
+     margin-bottom: 50px;
+  }
+
+  .number {
+      width: 100%;
+      height: 100px;
+      display: flex;
+      flex-direction: column;
+  }
+
+  .number p, a {
       margin: auto;
   }
 
-  .loginFo input {
-  	width: 80%;
-  	border: none;
-  	border-bottom: 2px solid #7fbee8;
-  	margin: 0 auto;
-  	margin-bottom: 25px;
+  .number a {
+      color: black;
+      font-size: 900;
+      font-style: italic;
   }
 
-  .loginFo p {
-    width: 80%;
-    margin: 0 auto;
+  .bar h2 {
+      margin: auto;
+      color: #fff;
+      font-size: 900;
+      font-style: italic;
+  }
+
+  .box {
+      width: 100%;
+      height: 370px;
+      display: flex;
+      padding: 10px;
+      flex-direction: column;
+      margin-top: -60px;
+  }
+
+  .box h3 {
+     margin: auto;
+  }
+
+  .verinFo p {
+    margin: auto;
+    margin-top: -10px;
     font-size: 10px;
-    margin-top: -18px;
-    margin-bottom: 15px;
   }
 
-  .loginFo button {
+  .verinFo img {
+      margin: auto;
+  }
+
+  .verinFo button {
   	width: 80%;
   	padding: 7px;
   	font-size: 20px;
@@ -90,11 +127,19 @@ a {
   	margin-bottom: 25px;
   }
 
-  .loginFo button {
+  .verinFo button {
       color: #fff;
       margin-top: 15px;
-  	border: 2px solid rgb(255, 0, 127);
-  	background-color: rgb(255, 0, 127);
+  	  border: 2px solid rgb(255, 0, 127);
+  	  background-color: rgb(255, 0, 127);
+  }
+
+  button a {
+      color: #fff;
+  }
+
+  .verinFo a {
+      margin-top: -10px;
   }
 
   input {

@@ -85,7 +85,8 @@ a {
 
   input::placeholder {
   	font-size: 14px;
-  	font-weight: 900;
+	font-weight: 700;
+	font-style: italic;
   }
 
   a {
