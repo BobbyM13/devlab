@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="375px" height="117px" viewBox="0 0 375 117" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Oval Header</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobile-Copy-42" transform="translate(0.000000, -5.000000)">
+            <g id="Oval-Header" transform="translate(0.000000, 5.000000)">
+                <path d="M0,45 L82.1240106,45 L375,45 L375,103.881843 C286.460404,113.067922 221.460404,117.42954 180,116.966697 C138.539596,116.503855 78.5395961,112.142237 0,103.881843 L0,45 Z" id="Rectangle-Copy" fill="#ED3C95"></path>
+                <path d="M0,0 L82.1240106,0 L375,0 L375,85.8693548 C286.460404,99.2657194 221.460404,105.626412 180,104.951434 C138.539596,104.276455 78.5395961,97.9157619 0,85.8693548 L0,0 Z" id="Rectangle" fill="#28397F"></path>
+            </g>
+        </g>
+    </g>
+</svg>

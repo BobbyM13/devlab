@@ -138,14 +138,56 @@ h1, h2, h3 {
     }
 
     .box {
-        width: 95%;
+        width: 80%;
         height: 300px;
         display: flex;
         flex-direction: column;
         border-radius: 10px;
         justify-content: space-between;
-        /* box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.23); */
+        box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.23);
         margin: 0 auto;
+    }
+
+    .tabbed-content {
+        width: 100%;
+    }
+
+    .tabs {
+        padding: 4px 8px;
+        width: 100%;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .tabz {
+        width: 69%;
+        padding: 3px;
+        background: #eef2f4;
+        margin: 0 auto;
+    }
+
+    .tabbed-content li{
+        display: inline-block;
+        padding: 4px 8px;
+        background: #eef2f4;
+        border-radius: 4px;
+        cursor: pointer;
+        color: #234672;
+    }
+    
+    .tabbed-content li.active{
+        background: #fff;
+        padding: 4px 8px;
+    }
+
+    .tabbed-content .panel{
+        display: none;
+        padding: 0 10px;
+        border-radius: 4px;
+    }
+    
+    .tabbed-content .panel.active{
+        display: block;
     }
 
     .box hr {
