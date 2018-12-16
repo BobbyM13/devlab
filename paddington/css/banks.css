@@ -67,61 +67,71 @@ h1 {
   }
 
   .two .first {
-      background: url("../images/nelnet.png") no-repeat;
-      background-size: cover;
+      background: url("../images/boa.png") no-repeat;
+      background-size: contain;
   }
 
   .two .second {
-    background: url("../images/navient.png") no-repeat;
+    background: url("../images/fidel.png") no-repeat;
     background-size: contain;
-    background-position-y: 23px;
+    background-position-y: 13px;
   }
 
   .two .third {
-    background: url("../images/lakes.jpg") no-repeat;
-    background-size: cover;
-    background-position-y: -15px;
-  }
-
-  .two .fourth {
-    background: url("../images/fedloan.png") no-repeat;
-    background-size: contain;
-    background-position-y: 5px;
-  }
-
-  .two .fifth {
-    background: url("../images/sofi.png") no-repeat;
-    background-size: contain;
-    background-position-y: 10px;
-  }
-
-  .two .sixth {
-    background: url("../images/aes.png") no-repeat;
-    background-size: cover;
-  }
-
-  .two .seventh {
-    background: url("../images/mohela.png") no-repeat;
-    background-size: contain;
-    background-position-y: 10px;
-  }
-
-  .two .eighth {
-    background: url("../images/boa.png") no-repeat;
-    background-size: contain;
-    background-position-y: 10px;
-  }
-
-  .two .ninth {
     background: url("../images/fargo.png") no-repeat;
     background-size: contain;
     background-position-x: 35px;
   }
 
-  .two .tenth {
+  .two .fourth {
+    background: url("../images/bbt.svg") no-repeat;
+    background-size: contain;
+    background-size: 70%;
+    background-position-x: 15px;
+    background-position-y: 15px;
+  }
+
+  .two .fifth {
+    background: url("../images/capital.png") no-repeat;
+    background-size: contain;
+    background-size: 80%;
+    background-position-x: 10px;
+    background-position-y: 15px;
+  }
+
+  .two .sixth {
+    background: url("../images/usaa.png") no-repeat;
+    background-size: cover;
+    background-size: 90%;
+    background-position-x: 10px;
+  }
+
+  .two .seventh {
     background: url("../images/citi.png") no-repeat;
     background-size: contain;
+    background-size: 80%;
+    background-position-x: 15px;
     background-position-y: 15px;
+  }
+
+  .two .eighth {
+    background: url("../images/tdb.png") no-repeat;
+    background-size: contain;
+    background-size: 80%;
+    background-position-x: 15px;
+    background-position-y: 15px;
+  }
+
+  .two .ninth {
+    background: url("../images/fivethree.png") no-repeat;
+    background-size: contain;
+    background-position-y: 10px;
+  }
+
+  .two .tenth {
+    background: url("../images/ally.jpg") no-repeat;
+    background-size: cover;
+    background-position-y: -35px;
   }
 
   .two a:focus {
@@ -129,10 +139,10 @@ h1 {
   }
 
   .three {
-    width: 100%;
-    min-height: 80px;
-    display: flex;
-}
+      width: 100%;
+      min-height: 80px;
+      display: flex;
+  }
 
   button {
     width: 90%;
