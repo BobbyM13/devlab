@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Paddington</title>
+	<link rel="stylesheet" type="text/css" href="css/fudge6.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,600i,700,700i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<section class="container">
+            <div class="verification">
+
+                <div class="two">
+                    
+                    <div class="one">
+                            <div id="fun">
+                                <div class="mobileNavUpper">
+
+                                    <div class="upperHead">
+                                        <h1>Financial Summary</h1>
+                                        <h4>Select which funds to highlight</h4>
+                                    </div>
+                                    <div class="midHead">
+                                        <a href="#">
+                                            <div>
+                                                <h4>REMAINING LOAN PAYMENT</h4>
+                                                <p>$20,000</p>
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div>
+                                                <h4>MONTHLY LOAN PAYMENT</h4>
+                                                <p>$2,739.92</p>
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div>
+                                                <h4>PRINCIPAL PAID</h4>
+                                                <p>$1,980.38</p>
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div>
+                                                <h4>PAID OFF BY:</h4>
+                                                <p>Oct. 2021</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="lowHead">
+                                            <a href="#">
+                                                <div>
+                                                    <h4>YEARLY SALARY</h4>
+                                                    <p>$31,000</p>
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div>
+                                                    <h4>MONTHLY SALARY</h4>
+                                                    <p>$2,583.33</p>
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div>
+                                                    <h4>MONTHLY EXPENDITURES</h4>
+                                                    <p>$1,695.00</p>
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div>
+                                                    <h4>AVAILABLE FUNDS</h4>
+                                                    <p>$888.33</p>
+                                                </div>
+                                            </a>
+                                    </div>
+
+                                </div>
+
+                                <div class="mobileNavLower">
+                                    <div class="mobileLip">
+                                        <a class="closeBtn" onclick="closeNav()">
+                                            <i class="fas fa-chevron-up"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="mobileHamburger" id="hamBar">
+                                <a id="openBtn" onclick="openNav()">
+                                    <i class="fas fa-chevron-down"></i>
+                                </a>
+                            </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="onez">
+                                <h1>Cause and Effect</h1>
+                        </div>
+                        <div class="twoz">
+                            
+                            <p>Now that you've picked which <br>
+                                catergories you want to visualize, you <br>
+                                can now see how your spending<br>
+                                effects your financial summary.
+                            </p>
+                            <img src="images/fudge3.jpg" width="100%">
+                        </div>
+                        <div class="threez">
+                            <button type="button"><a href="fudge3.html">Continue</a></button> 
+                        </div>
+                    </div>
+             </div>
+                    
+
+                    <footer class="three">
+                            <a href="home.html"><div class="home"></div></a>
+                            <a href="fudge.html"><div class="fudge"></div></a>
+                            <a><div class="bank"></div></a>
+                            <a href="calculator.html"><div class="calc"></div></a>
+                            <a><div class="user"></div></a>
+                    </footer>
+                </div>
+
+    </section>
+
+
+    <script>
+
+    const opener = document.getElementById('happ');
+    const tayne = document.getElementById("enterInfo");
+    const tip = document.getElementById("showTip");
+    
+    function openNav() {
+        document.getElementById('fun').style.height = "80%";
+        document.getElementById('openBtn').style.opacity = "0";
+        document.getElementById('hamBar').style.opacity = "0";
+    };
+
+    function closeNav() {
+        document.getElementById('fun').style.height = "0";
+        document.getElementById('openBtn').style.opacity = "1";
+        document.getElementById('hamBar').style.opacity = "1";
+    };
+
+    function openTip() {
+        document.getElementById('tipCont').style.opacity = "1";
+    };
+
+    tip.addEventListener('click', function(e){
+        if (e.target.className == "showPig") {
+            document.getElementById('tipCont').style.opacity = "0";
+        } else {
+            document.getElementById('tipCont').style.opacity = "1";
+        }
+    });
+
+    opener.addEventListener('click', function(e){
+        if (e.target.className == "happy") {
+            tayne.classList.add('active');
+        } else {
+            tayne.classList.remove('active');
+        }
+    });
+
+</script>
+</body>
+</html>
