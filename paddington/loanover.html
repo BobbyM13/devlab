@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Paddington</title>
-	<link rel="stylesheet" type="text/css" href="css/calc.css">
+	<link rel="stylesheet" type="text/css" href="css/loanover.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,600i,700,700i,900,900i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
@@ -17,11 +17,54 @@
                                 
                                 <div class="one">
                                     <a class="obsolete"><i class="fas fa-chevron-left"></i></a>
-                                    <h3>Payment Plan</h3>
+                                    <h3>Overview</h3>
                                     <a><i class="far fa-bell"></i></a>
                                 </div>
 
-                                    <div class="box">
+                                <div class="loans">
+
+                                            <div class="box2">
+                                                <div class="panel">
+                                                    <div>$20,000</div>
+                                                    <br>
+                                                    <h5>Principal Paid</h5>     
+                                                </div>
+                                            </div>
+            
+                                            <div class="box2">
+                                                <div class="panel">
+                                                    <div>June, 2033</div>
+                                                    <br>
+                                                    <h5>Paid Off</h5>
+                                                </div>
+                                            </div>
+
+                                            <div class="box3">
+                                                <div class="panel">
+                                                    <div>$13,260.84</div>
+                                                    <br>
+                                                    <h5>Interest Paid</h5>
+                                                </div>
+                                            </div>
+
+                                            <div class="box4">
+                                                <div class="panel">
+                                                    <div>7.45%</div>
+                                                    <br>
+                                                    <h5>Avg. Interest Rate</h5>
+                                                </div>
+                                            </div>
+
+                                            <div class="box5">
+                                                <div class="panel">
+                                                    <div>$2,583</div>
+                                                    <br>
+                                                    <h5>Income</h5>
+                                                </div>
+                                            </div>
+                                </div>
+
+                                <div class="bock">
                                         <div class="boxOne">
                                             <div class="tabbed-content">
                                                 <ul class="tabs">
@@ -58,10 +101,35 @@
                                         </div>
                                     </div>
 
-                                    <button type="button"><a href="loanscon.html">My Loans</a></button>
-                                    <a class="plus" href="loanscon.html"><i class="fas fa-plus"></i></a>
+                                    <div class="blueBar">
+                                            <div class="tabbed-content">
+                                                <h3>Charts</h3>
+                                            </div>
+                                                <ul class="tabs">
+                                                    <div class="tabzz">
+                                                        <li data-info="#total">Total Interest Paid</li>
+                                                        <li data-info="#payoff">Payoff Date</li>
+                                                        <li data-info="#principal" class="active">Principal Remaining</li>
+                                                        <li data-info="#monthly">Monthly Payments</li>
+                                                    </div>
 
-                            </div>
+                                                    <div class="panelz" id="total">
+                                                        <h5>Monthly Payment</h5>
+                                                    </div>
+                                                    <div class="panelz" id="payoff">
+                                                        <h5>Monthly</h5>
+                                                    </div>
+                                                    <div class="panelz active" id="principal">
+                                                        <h5>Yearly</h5>
+                                                    </div>
+                                                    <div class="panelz" id="monthly">
+                                                        <h5>Weekly</h5>
+                                                    </div>
+                                                </ul>
+                                            </div>
+                            </div> 
+                            <!-- End of class="two" -->
+
                             <footer class="three">
                                     <a href="home.html"><div class="home"></div></a>
                                     <a href="fudge.html"><div class="fudge"></div></a>
@@ -69,12 +137,11 @@
                                     <a href="calculator.html"><div class="calc"></div></a>
                                     <a><div class="user"></div></a>
                             </footer>
-
             </div>
     </section>
     
     <script>
-        
+
         const tabs = document.querySelector('.tabz');
         const panels = document.querySelectorAll('.panel');
         tabs.addEventListener('click', function(e){
@@ -89,6 +156,29 @@
             if(e.target.tagName == "LI"){
                 const targetPanel = document.querySelector(e.target.dataset.info);
                 panels.forEach(function(panel){
+                    if (panel == targetPanel) {
+                        panel.classList.add('active');
+                    } else {
+                        panel.classList.remove('active');
+                    }
+                })  
+            }
+        });
+
+        const tabz = document.querySelector('.tabzz');
+        const panelz = document.querySelectorAll('.panelz');
+        tabz.addEventListener('click', function(e){
+        // Remove active class from all li
+        const c = tabz.children;
+        for (let i = 0; i < c.length; i++) {
+            c[i].classList.remove('active');
+        }
+        // Add active class to clicked item
+        e.target.classList.add('active');
+        
+            if(e.target.tagName == "LI"){
+                const targetPanel = document.querySelector(e.target.dataset.info);
+                panelz.forEach(function(panel){
                     if (panel == targetPanel) {
                         panel.classList.add('active');
                     } else {

@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Paddington</title>
-	<link rel="stylesheet" type="text/css" href="css/calc.css">
+	<link rel="stylesheet" type="text/css" href="css/loanscon.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,600i,700,700i,900,900i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
@@ -17,49 +17,61 @@
                                 
                                 <div class="one">
                                     <a class="obsolete"><i class="fas fa-chevron-left"></i></a>
-                                    <h3>Payment Plan</h3>
+                                    <h3>Your Loans</h3>
                                     <a><i class="far fa-bell"></i></a>
                                 </div>
 
-                                    <div class="box">
-                                        <div class="boxOne">
-                                            <div class="tabbed-content">
-                                                <ul class="tabs">
-                                                    <div class="tabz">
-                                                        <li data-info="#avalanche" class="active">Avalanche</li>
-                                                        <li data-info="#snowball">Snowball</li>
-                                                        <a><i class="far fa-question-circle"></i></a>
-                                                    </div>
-
-                                                    <div class="panel active" id="avalanche">
-                                                        <h5>Monthly Payment</h5>
-                                                        <br>
-                                                        <div id="count">$193</div>
-                                                        <br>
-                                                        <input type="range" min="0" max="2000" id="line" value="193">
-                                                        <br><br>
-                                                        <h5>Monthly Income</h5>
-                                                        <br>
-                                                        <div>$2,583</div>
-                                                    </div>
-                                                    <div class="panel" id="snowball">
-                                                        <h5>Monthly Payment</h5>
-                                                        <br>
-                                                        <div id="count2">$458</div>
-                                                        <br>
-                                                        <input type="range" min="0" max="2000" id="line2" value="458">
-                                                        <br><br>
-                                                        <h5>Monthly Income</h5>
-                                                        <br>
-                                                        <div>$2,583</div>
-                                                    </div>
-                                                </ul>
+                                <div class="loans">
+                                        <div class="loanName">
+                                                <h2>Navient</h2>
                                             </div>
-                                        </div>
-                                    </div>
+            
+                                            <div class="box">
+                                                <div class="boxOne">
+                                                    <div class="panel">
+                                                        <h5>Principal remaining ($)</h5>
+                                                        <br>
+                                                        <div>$15,000</div>
+                                                        <br>
+                                                        <br>
+                                                        <h5>Interest</h5>
+                                                        <br>
+                                                        <div>6.7%</div>
+                                                        <br>
+                                                        <h5>Minimum Payment ($)</h5>
+                                                        <br>
+                                                        <div>$150</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+            
+                                            <div class="loanName2">
+                                                    <h2>Bank of America</h2>
+                                                </div>
+            
+                                            <div class="box2">
+                                                <div class="panel">
+                                                    <h5>Principal remaining ($)</h5>
+                                                    <br>
+                                                    <div>$15,000</div>
+                                                    <br>
+                                                    <br>
+                                                    <h5>Interest</h5>
+                                                    <br>
+                                                    <div>6.7%</div>
+                                                    <br>
+                                                    <h5>Minimum Payment ($)</h5>
+                                                    <br>
+                                                    <div>$150</div>
+                                                </div>
+                                            </div>
+                                </div>
 
-                                    <button type="button"><a href="loanscon.html">My Loans</a></button>
-                                    <a class="plus" href="loanscon.html"><i class="fas fa-plus"></i></a>
+                                <div class="buttonz">
+                                        <button type="button"><a href="#">Add More</a></button>
+                                        <a class="plus" href="loanscon.html"><i class="fas fa-plus"></i></a>
+                                        <button type="button" class="secondbutton"><a href="loanover.html">Continue</a></button>
+                                </div>
 
                             </div>
                             <footer class="three">
@@ -74,7 +86,7 @@
     </section>
     
     <script>
-        
+
         const tabs = document.querySelector('.tabz');
         const panels = document.querySelectorAll('.panel');
         tabs.addEventListener('click', function(e){

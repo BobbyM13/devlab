@@ -78,13 +78,6 @@ h1, h2, h3 {
         background: #fff;
     }
 
-    .blueBar {
-        width: 100%;
-        height: 500px;
-        background-image: linear-gradient(#243672, rgb(87, 110, 187));
-        margin-top: 50px;
-    }
-
     .three {
         width: 100%;
         min-height: 48px;
@@ -105,28 +98,29 @@ h1, h2, h3 {
         color: red;
     }
 
-    .recent {
+    .buttonz {
         width: 100%;
-        height: 300px;
-        padding: 15px;
+        height: 100px;
         display: flex;
-        flex-direction: column;
-    }
-
-    .recent h3 {
-        margin-top: 20px;
-        font-family: 'Source Sans Pro', sans-serif;
-        color: #fff;
+        margin-top: -50px;
     }
 
     button {
-        width: 60%;
+        width: 35%;
         height: 45px;
         padding: 5px;
         font-size: 18px;
         border-radius: 6px;
         margin: 0 auto;
-        margin-top: -30px;
+    }
+
+    .secondbutton {
+        border: 2px solid #7fbee8;
+        background: #fff;
+    }
+
+    .secondbutton a {
+        color: #7fbee8;
     }
 
     button {
@@ -139,37 +133,141 @@ h1, h2, h3 {
         color: #fff;
     }
 
-    .plus {
-        width: 30px;
-        height: 30px;
-        border-radius: 25px;
-        background: #fff;
-        border: 2px solid #7fbee8;
-        position: absolute;
-        margin-left: 280px;
-        margin-top: 529px;
+    .loans {
+        width: 100%;
+        height: 400px;
+        padding-top: 20px;
         display: flex;
-    }
-
-    .plus i {
-        color: #7fbee8;
-        margin: auto;
+        flex-wrap: wrap;
     }
 
     .box {
-        width: 80%;
-        height: 300px;
+        min-width: 40%;
+        height: 100px;
         display: flex;
         flex-direction: column;
         border-radius: 10px;
         justify-content: space-between;
         box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.23);
         margin: 0 auto;
-        margin-top: -40px;
+    }
+
+    .box2 {
+        min-width: 40%;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        justify-content: space-between;
+        box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.23);
+        margin: 0 auto;
+    }
+
+    .box3 {
+        min-width: 40%;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        justify-content: space-between;
+        box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.23);
+        margin: 0 auto;
+    }
+
+    .box4 {
+        min-width: 40%;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        justify-content: space-between;
+        box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.23);
+        margin: 0 auto;
+    }
+
+    .box5 {
+        min-width: 40%;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        justify-content: space-between;
+        box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.23);
+        margin: 0 auto;
+    }
+
+    .bock {
+        width: 80%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    .loanName {
+        width: 70%;
+        height: 35px;
+        background: #243672;
+        margin: 0 auto;
+        display: flex;
+        border-radius: 9px;
+    }
+
+    .panel{
+        width: 100%;
+        text-align: center;
+        padding: 30px 10px;
+        border-radius: 4px;
+    }
+
+    .loanName2 {
+        margin-top: 50px;
+    }
+
+    .box hr {
+        width: 80%;
+        background: #7fbee8;
+        margin: auto;
+    }
+
+    .boxOne {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .boxTwo {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .boxThree {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
     }
 
     .tabbed-content {
         width: 100%;
+    }
+
+    .blueBar {
+        width: 100%;
+        height: 70px;
+        background-image: linear-gradient(#243672, rgb(87, 110, 187));
+        text-align: center;
+        padding: 10px;
+    }
+
+    .blueBar h3 {
+        color: #fff;
     }
 
     .tabs {
@@ -207,6 +305,46 @@ h1, h2, h3 {
     }
     
     .tabbed-content .panel.active{
+        display: block;
+    }
+
+    .tabzz {
+        width: 100%;
+        height: 130px;
+        display: flex;
+        margin-top: -30px;
+    }
+
+    .tabzz li {
+        width: 23%;
+        height: 70px;
+        background: #fff;
+        color: #000;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.23);
+        border-radius: 6px;
+        font-size: 12px;
+    }
+
+    .tabzz li.active {
+        background: #ee3c96;
+        padding: 4px 8px;
+        color: #fff;
+    }
+
+    .panelz{
+        width: 100%;
+        height: 200px;
+        display: none;
+        padding: 30px 10px;
+        border-radius: 4px;
+        background: red;
+    }
+    
+    .panelz.active{
         display: block;
     }
 
@@ -282,32 +420,6 @@ h1, h2, h3 {
         color: transparent;
     }
 
-    .box hr {
-        width: 80%;
-        background: #7fbee8;
-        margin: auto;
-    }
-
-    .boxOne {
-        width: 100%;
-        height: 100px;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .boxTwo {
-        width: 100%;
-        height: 100px;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .boxThree {
-        width: 100%;
-        height: 100px;
-        display: flex;
-        justify-content: space-between;
-    }
 
     .left {
         width: 50%;
