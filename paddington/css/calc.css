@@ -92,6 +92,7 @@ h1, h2, h3 {
         position: fixed;
         bottom: 0;
         background: #fff;
+        border-top: 2px solid #ee3c96;
         z-index: 9999;
     }
 
@@ -99,10 +100,6 @@ h1, h2, h3 {
         padding: 10px;
         margin: auto;
         display: flex;
-    }
-
-    a:hover {
-        color: red;
     }
 
     .recent {
