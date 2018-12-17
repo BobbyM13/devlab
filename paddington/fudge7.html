@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Paddington</title>
-	<link rel="stylesheet" type="text/css" href="css/fudge6.css">
+	<link rel="stylesheet" type="text/css" href="css/fudge7.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,600i,700,700i,900,900i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
@@ -13,8 +13,6 @@
 	<section class="container">
             <div class="verification">
 
-                <div class="two">
-                    
                     <div class="one">
                             <div id="fun">
                                 <div class="mobileNavUpper">
@@ -86,33 +84,43 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <div id="fun2">
+                                    <!-- <h5>Monthly Payment</h5>
+                                    <br>
+                                    <div id="count">$193</div>
+                                    <br>
+                                    <input type="range" min="0" max="2000" id="line" value="193"> -->
+    
+                                    <div class="sliders2" id="slideBar">
+                                        <a id="openSlide" onclick="closeSliders()">
+                                            <i class="fas fa-sliders-h"></i>
+                                        </a>
+                                    </div>
+                            </div>
                         
                             <div class="mobileHamburger" id="hamBar">
                                 <a id="openBtn" onclick="openNav()">
                                     <i class="fas fa-chevron-down"></i>
                                 </a>
                             </div>
+
+
+                            <div class="sliders" id="slideBar">
+                                <a id="openSlide" onclick="openSliders()">
+                                    <i class="fas fa-sliders-h"></i>
+                                </a>
+                            </div>
+                            
                     </div>
 
-                    <div class="box">
-                        <div class="onez">
-                                <h1>Cause and Effect</h1>
-                        </div>
-                        <div class="twoz">
-                            
-                            <p>Now that you've picked which <br>
-                                catergories you want to visualize, you <br>
-                                can now see how your spending<br>
-                                effects your financial summary.
-                            </p>
-                            <img src="images/fudge3.jpg" width="100%">
-                        </div>
-                        <div class="threez">
-                            <button type="button"><a href="fudge7.html">Continue</a></button> 
-                        </div>
+                    <div class="two">
+                        <div class="balance"></div>
+                        <div class="payments"></div>
+                        <div class="expend"></div>
+                        <div class="funds"></div>
+                        <div class="salary"></div>
                     </div>
-             </div>
-                    
 
                     <footer class="three">
                             <a href="home.html"><div class="home"></div></a>
@@ -142,6 +150,18 @@
         document.getElementById('fun').style.height = "0";
         document.getElementById('openBtn').style.opacity = "1";
         document.getElementById('hamBar').style.opacity = "1";
+    };
+
+    function openSliders() {
+        document.getElementById('fun2').style.width = "100%";
+        document.getElementById('openSlide').style.opacity = "1";
+        document.getElementById('slideBar').style.opacity = "1";
+    };
+
+    function closeSliders() {
+        document.getElementById('fun2').style.width = "0";
+        document.getElementById('openSlide').style.opacity = "1";
+        document.getElementById('slideBar').style.opacity = "1";
     };
 
     function openTip() {
