@@ -49,6 +49,7 @@ h1, h2, h3 {
         justify-content: space-between;
         display: flex;
         flex-direction: column;
+        /* background: red; */
     }
 
     .one a {
@@ -71,6 +72,18 @@ h1, h2, h3 {
         font-size: 20px;
     }
 
+    .sliders h1 {
+        font-size: 36px;
+        margin-left: 140px;
+        margin-top: 30px;
+        color: #17d317;
+    }
+
+    .sliders h4 {
+        margin-left: 110px;
+        color: #ccc;
+    }
+
     .sliders2 {
         width: 100%;
         height: 50px;
@@ -83,40 +96,69 @@ h1, h2, h3 {
 
     .two {
         width: 100%;
-        height: 500px;
+        height: 463px;
         background: #243672;
         display: flex;
         align-items: flex-end;
     }
 
-    .balance {
-        width: 20%;
-        height: 300px;
-        background: blue;
-    }
-
-    .payments {
-        width: 20%;
-        height: 200px;
-        background: navajowhite;
-    }
-
-    .expend {
-        width: 20%;
-        height: 350px;
-        background: purple;
-    }
-
-    .funds {
-        width: 20%;
-        height: 150px;
-        background: teal;
-    }
-
-    .salary {
+    #balance {
         width: 20%;
         height: 500px;
-        background: green;
+        max-height: 500px;
+        background: #262A43;
+        border-right: 1px solid #243672;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    #payments {
+        width: 20%;
+        height: 150px;
+        background: #262A43;
+        border-right: 1px solid #243672;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    #expend {
+        width: 20%;
+        height: 250px;
+        background: #262A43;
+        border-right: 1px solid #243672;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    #funds {
+        width: 20%;
+        height: 220px;
+        background: #262A43;
+        border-right: 1px solid #243672;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    #salary {
+        width: 20%;
+        height: 300px;
+        background: #262A43;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .two h5 {
+        color: #ddd;
     }
 
     .transformer {
@@ -210,6 +252,88 @@ h1, h2, h3 {
 
     #fun2.active {
         display: block;
+    }
+
+    .panel {
+        width: 100%;
+        height: 500px;
+        background: #fff;
+        padding: 30px 10px;
+        color: #000;
+        text-align: center;
+        overflow: auto;
+    }
+
+    input {
+        margin-top: 5px;
+    }
+
+    input[type=range] {
+        /*removes default webkit styles*/
+        -webkit-appearance: none;
+        /*required for proper track sizing in FF*/
+        width: 150px;
+    }
+    input[type=range]::-webkit-slider-runnable-track {
+        width: 150px;
+        height: 5px;
+        background: #eef2f4;
+        border: none;
+        border-radius: 3px;
+    }
+    /* кружок */
+    input[type=range]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        border: none;
+        height: 16px;
+        width: 16px;
+        border-radius: 50%;
+        background: #243672;
+        border: 4px solid #243672;
+        margin-top: -4px;
+        cursor: pointer;
+    }
+    input[type=range]:focus {
+        outline: none;
+    }
+    input[type=range]:focus::-webkit-slider-runnable-track {
+        background: #ee3c96;
+    }
+    
+    input[type=range]::-moz-range-track {
+        width: 200px;
+        height: 1px;
+        background: #ddd;
+        border: none;
+        border-radius: 3px;
+    }
+    input[type=range]::-moz-range-thumb {
+        border: none;
+        height: 16px;
+        width: 16px;
+        border-radius: 50%;
+        background: red;
+    }
+    
+    /*hide the outline behind the border*/
+    input[type=range]:-moz-focusring{
+        outline: 1px solid white;
+        outline-offset: -1px;
+    }
+    
+    input[type=range]::-ms-track {
+        width: 300px;
+        height: 1px;
+        
+        /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
+        background: transparent;
+        
+        /*leave room for the larger thumb to overflow with a transparent border */
+        border-color: transparent;
+        border-width: 6px 0;
+    
+        /*remove default tick marks*/
+        color: transparent;
     }
 
     .mobileHamburger {

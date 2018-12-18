@@ -86,17 +86,50 @@
                             </div>
 
                             <div id="fun2">
-                                    <!-- <h5>Monthly Payment</h5>
-                                    <br>
-                                    <div id="count">$193</div>
-                                    <br>
-                                    <input type="range" min="0" max="2000" id="line" value="193"> -->
-    
+
                                     <div class="sliders2" id="slideBar">
                                         <a id="openSlide" onclick="closeSliders()">
                                             <i class="fas fa-sliders-h"></i>
                                         </a>
                                     </div>
+
+                                    <div class="panel">
+                                        <h3>Rent</h3>
+                                        <br>
+                                        <input type="range" min="0" max="500" id="line" value="300">
+                                        <br><br>
+                                        <div id="count">$600</div>
+                                        <br>
+                                        <h3>Utilities</h3>
+                                        <br>
+                                        <input type="range" min="0" max="500" id="line2" value="75">
+                                        <br><br>
+                                        <div id="count2">$75</div>
+                                        <br>
+                                        <h3>Eating Out</h3>
+                                        <br>
+                                        <input type="range" min="0" max="500" id="line3" value="100">
+                                        <br><br>
+                                        <div id="count3">$100</div>
+                                        <br>
+                                        <h3>Entertainment</h3>
+                                        <br>
+                                        <input type="range" min="0" max="500" id="line4" value="440">
+                                        <br><br>
+                                        <div id="count4">$740</div>
+                                        <br>
+                                        <h3>Groceries</h3>
+                                        <br>
+                                        <input type="range" min="0" max="500" id="line5" value="120">
+                                        <br><br>
+                                        <div id="count5">$120</div>
+                                        <br>
+                                        <h3>Gas</h3>
+                                        <br>
+                                        <input type="range" min="0" max="1000" id="line6" value="60">
+                                        <br><br>
+                                        <div id="count6">$60</div>
+                                    </div>   
                             </div>
                         
                             <div class="mobileHamburger" id="hamBar">
@@ -110,16 +143,29 @@
                                 <a id="openSlide" onclick="openSliders()">
                                     <i class="fas fa-sliders-h"></i>
                                 </a>
+                                
+                                <h1>5%</h1>
+                                <h4>Available Funds</h4>
                             </div>
-                            
+  
                     </div>
 
                     <div class="two">
-                        <div class="balance"></div>
-                        <div class="payments"></div>
-                        <div class="expend"></div>
-                        <div class="funds"></div>
-                        <div class="salary"></div>
+                        <div id="balance">
+                            <h5>Loan Balance</h5>
+                        </div>
+                        <div id="payments">
+                                <h5>Monthly Payments</h5>
+                        </div>
+                        <div id="expend">
+                                <h5>Monthly Expend.</h5>
+                        </div>
+                        <div id="funds">
+                                <h5>Available Funds</h5>
+                        </div>
+                        <div id="salary">
+                                <h5>Monthly Salary</h5>
+                        </div>
                     </div>
 
                     <footer class="three">
@@ -164,25 +210,82 @@
         document.getElementById('slideBar').style.opacity = "1";
     };
 
-    function openTip() {
-        document.getElementById('tipCont').style.opacity = "1";
-    };
+    var line =  document.getElementById("line");
+    var line2 = document.getElementById("line2");
+    var line3 = document.getElementById("line3");
+    var line4 = document.getElementById("line4");
+    var line5 = document.getElementById("line5");
+    var line6 = document.getElementById("line6");
 
-    tip.addEventListener('click', function(e){
-        if (e.target.className == "showPig") {
-            document.getElementById('tipCont').style.opacity = "0";
-        } else {
-            document.getElementById('tipCont').style.opacity = "1";
-        }
+    var totBarHigh = document.getElementById("balance");
+    var payBarHigh = document.getElementById("payments");
+    var expBarHigh = document.getElementById("expend");
+
+    var lineValue = line.value;
+    var lineValue2 = line2.value;
+    var lineValue3 = line3.value;
+    var lineValue4 = line4.value;
+    var lineValue5 = line5.value;
+    var lineValue6 = line6.value;
+
+    line.addEventListener('input', function () {
+    var  lineValue =  line.value;
+    var  count = document.getElementById("count");
+    count.innerHTML = "$" + lineValue*2;
+    totBarHigh.style.height = lineValue + "px";
+    payBarHigh.style.height = lineValue*1.5 + "px";
+    expendBarHigh.style.height = lineValue*0.2 + "px";
     });
 
-    opener.addEventListener('click', function(e){
-        if (e.target.className == "happy") {
-            tayne.classList.add('active');
-        } else {
-            tayne.classList.remove('active');
-        }
+    line2.addEventListener('input', function () {
+    var  lineValue2 =  line2.value*2;
+    var  count = document.getElementById("count");
+    count2.innerHTML = "$" + lineValue2;
+    totBarHigh.style.height = lineValue + "px";
+    payBarHigh.style.height = lineValue*1.5 + "px";
+    expendBarHigh.style.height = lineValue*0.2 + "px";
+ 
     });
+
+    line3.addEventListener('input', function () {
+    var  lineValue3 =  line3.value*2;
+    var  count = document.getElementById("count");
+    count3.innerHTML = "$" + lineValue3;
+    totBarHigh.style.height = lineValue + "px";
+    payBarHigh.style.height = lineValue*1.5 + "px";
+    expendBarHigh.style.height = lineValue*0.2 + "px";
+
+    });
+
+    line4.addEventListener('input', function () {
+    var  lineValue4 =  line4.value*2;
+    var  count = document.getElementById("count");
+    count4.innerHTML = "$" + lineValue4;
+    totBarHigh.style.height = lineValue + "px";
+    payBarHigh.style.height = lineValue*1.5 + "px";
+    expendBarHigh.style.height = lineValue*0.2 + "px";
+    });
+
+    line5.addEventListener('input', function () {
+    var  lineValue5 =  line5.value*2;
+    var  count = document.getElementById("count");
+    count5.innerHTML = "$" + lineValue5;
+    totBarHigh.style.height = lineValue + "px";
+    payBarHigh.style.height = lineValue*1.5 + "px";
+    expendBarHigh.style.height = lineValue*0.2 + "px";
+
+    });
+
+    line6.addEventListener('input', function () {
+    var  lineValue6 =  line6.value*2;
+    var  count = document.getElementById("count");
+    count6.innerHTML = "$" + lineValue6;
+    totBarHigh.style.height = lineValue + "px";
+    payBarHigh.style.height = lineValue*1.5 + "px";
+    expendBarHigh.style.height = lineValue*0.2 + "px";
+   
+    });
+
 
 </script>
 </body>
