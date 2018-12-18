@@ -338,11 +338,10 @@ h1, h2, h3 {
 
     .panelz{
         width: 100%;
-        height: 200px;
+        height: 400px;
         display: none;
         padding: 30px 10px;
         border-radius: 4px;
-        background: red;
     }
     
     .panelz.active{

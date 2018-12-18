@@ -88,9 +88,10 @@ a {
 
   .loginFo button {
       color: #fff;
+      height: 45px;
       margin-top: 15px;
-  	border: 2px solid rgb(255, 0, 127);
-  	background-color: rgb(255, 0, 127);
+    border: 2px solid rgb(255, 0, 127);
+    background-color: rgb(255, 0, 127);
   }
 
   input {
