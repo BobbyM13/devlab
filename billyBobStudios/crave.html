@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Billy Bob Design</title>
+    <title>Crave Food</title>
 
     <link rel="stylesheet" type="text/css" media="screen" href="crave.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
@@ -47,7 +47,7 @@
         </div>
     
        <nav id="colorNav">
-            <div class="logo"><a href="index.html">Billy Bob Designs</a></div>
+            <div class="logo"><a href="index.html"><img src="images/logo.png" width="50%"></a></div>
             <ul>
                 <li id="firstLie"><a href="#aboutSection">About</a></li>
                 <li id="secondLie"><a href="#proecssSection">Process</a></li>
@@ -55,7 +55,7 @@
                     <ul id="subNav">
                         <li><a href="crave.html">Crave</a></li>
                         <li><a href="#">Amazon</a></li>
-                        <li><a href="#">Project 3</a></li>
+                        <li><a href="#">Paddington</a></li>
                     </ul>
                 </li>
                 <li id="lastLie"><a href="#contactSection">Contact</a></li>
@@ -73,7 +73,7 @@
                 </p>
                 <br>
                 <div class="researchSect">
-                    <h1>This first step of the process is Research!</h1>
+                    <h1>Discovering the Problem</h1>
                     <p>Before we could even form a hypothesis, we had to find out people's habits.
                         This was done by interviewing 3 people. and sending out surveys. (36 results)
                     </p>
@@ -134,6 +134,12 @@
                         The additional three frames were to showcase the new filter options.
                     </p>
                     <br>
+                    <p>The following link will take you to the InVision Prototype of the 2nd iteration of wireframes.</p>
+                    <div class="tryIt">
+                        <button class="aboutMe"><a href="https://projects.invisionapp.com/share/BDNLJUKAKNE#/screens/315169807" target="_blank" rel="noopener">Try it Out</a></button>
+                    </div>
+                    
+                    <br>
                     <h1>The final piece of the puzzle for this 2 week sprint</h1>
                     <p>Now that we had researched, designed, tested, and iterated, we had finally reached the 
                         high res comps phase of the project.
@@ -162,11 +168,20 @@
                     This would conclude our first project in class and our first experience working in the AGILE model <br>
                     as well as using the double diamond to inform our decisions. <br><br><br><br><br><br>
                     </p>
+                    <!-- <img id="myImg" src="images/hero.jpg" alt="Snow" width="50%" height="50%">
+                    
+                    <div id="myModal" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="img01">
+                        <div id="caption"></div>
+                    </div> -->
                 </div>
             </div>
+
         </section>
+
+        
     </div>
-    
 
     <script type="text/javascript">
 
@@ -211,21 +226,26 @@
             document.getElementById('openBtn').style.opacity = "1";
         };
 
-        const list = document.querySelector('.flexer');
-        const searchBar = document.forms['search-books'].querySelector('input');
+        // Get the modal
+        var modal = document.getElementById('myModal');
 
-        searchBar.addEventListener('keyup', function(e){
-            const term = e.target.value.toLowerCase();
-            const books = list.getElementsByTagName('a');
-            Array.from(books).forEach(function(book){
-                const title = book.firstElementChild.textContent;
-                if(title.toLowerCase().indexOf(term) != -1){
-                    book.style.display = "block";
-                } else {
-                    book.style.display = "none";
-                }
-            });
-        });
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById('myImg');
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+        }
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() { 
+        modal.style.display = "none";
+        }
 
     </script>
         

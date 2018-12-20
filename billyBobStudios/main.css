@@ -46,15 +46,11 @@ nav.black {
 }
 
 nav .logo {
-    padding: 22px 20px;
-    height: 80px;
+    height: 74px;
     font-size: 24px;
     transition: .3s ease;
-    color: #fff;
-}
-
-nav.black .logo {
-    color: #000;
+    display: flex;
+    padding-top: 5px;
 }
 
 nav ul {
