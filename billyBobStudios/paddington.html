@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Paddington</title>
+
+    <link rel="stylesheet" type="text/css" media="screen" href="paddington.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
+    <!-- <script src="main.js"></script> -->
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <div id="fun">
+            <div class="mobileNavUpper">
+                <div class="upperLeftNav"><a href="#" onclick="closeNav()">Billy Bob Designs</a></div>
+                <div class="upperRightNav">
+                    <a class="closeBtn" onclick="closeNav()">
+                        <div class="transfomer2">
+                            <div class="barz1"></div>
+                            <div class="barz2"></div>
+                            <div class="barz3"></div>
+                        </div>
+                    </a>
+            </div>
+            </div>
+            <div class="mobileNavLower">
+                    <div><a href="#aboutSection" onclick="closeNav()">About</a></div>
+                    <div><a href="#projectsSection" onclick="closeNav()">Projects</a></div>
+                    <div><a href="#">Contact</a></div>
+            </div>
+        </div>
+
+        <div class="mobileHamburger">
+            <a id="openBtn" onclick="openNav()">
+                <div class="transfomer">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div></a>
+        </div>
+    
+       <nav id="colorNav">
+            <div class="logo"><a href="index.html"><img src="images/logo.png" width="50%"></a></div>
+            <ul>
+                <li id="firstLie"><a href="about.html">About</a></li>
+                <li id="secondLie"><a href="resume.html">Resume</a></li>
+                <li id="projects"><a href="#">Projects &#9662;</a>
+                    <ul id="subNav">
+                        <li><a href="crave.html">Crave</a></li>
+                        <li><a href="amazon.html">Amazon</a></li>
+                        <li><a href="paddington.html">Paddington</a></li>
+                    </ul>
+                </li>
+                <li id="lastLie"><a href="#contactSection">Contact</a></li>
+            </ul>
+       </nav>
+        
+        <section class="hero"></section>
+        
+        <section class="content">
+               
+                <div class="infoSect">
+                    <h1>Paddington, the Student Loan Debt Management Tool</h1>
+                    <p>The final project of our class was the financial app, Paddington. This was an interesting
+                        in that it was primarily coding based. For Paddington, we decided to follow the LEAN Model of AGILE
+                        and work within certain constraints. This project was created with Nichelle, Gaby, Paulina, and Merritt.
+                    </p>
+                    <br>
+                    <div class="researchSect">
+                        <h1>Diving In</h1>
+                        <p>Because of the time constraints and usage of the LEAN Model, we jumped right into creating user personas and a journey map.
+                        </p>
+                        <div class="persona"></div>
+                        <div class="persona2"></div>
+                        <p>
+                            Both Audrey and Devan provided great insights and a compass for us to follow throughout the design.
+                            However, Devan's financial situation was what influenced the numbers part of the app the most.
+                        </p>
+                        <div class="journey"></div>
+                        <h1>Devan's Emotional Journey</h1>
+                        <p>
+                            After creating Audrey and Devan, we created the final part of our pre-design phase, the journey map.
+                            Here we follow them on their ups and downs in order to discover where Paddington can help them.
+                        </p>
+                        <h1>Wireframing</h1>
+                        <p>Due to the time constraints, we decided to jump right into low-res wireframes, rather than paper wireframes.
+                            We made this decision in order to be able to test them more quickly.
+                        </p>
+                        <div class="twoPics">
+                            <div class="wireFrames1"></div>
+                            <div class="wireFrames2"></div>
+                        </div> 
+                        <h1>Testing and Iteration</h1>
+                        <p>With the low-res wireframes completed, we tested and recieved some great insights.
+                           After the first round of insights, we quickly iterated. By this time though, the style guide was completed,
+                           so we applied that to our 2nd round wireframes.
+                        </p>
+                        <div class="styleGuide"></div>
+                        <h1>A/B Testing</h1>
+                        <p>
+                            Now that the wireframes and style guide were paired together, we had high-res comps to test.
+                            This was done by A/B testing 5 users, 3 men and 2 women.
+                        </p>
+                        <div class="twoPics">
+                            <div class="wireFrames3"></div>
+                            <div class="wireFrames4"></div>
+                        </div>
+                        <br>
+                        <h1>Test Results</h1>
+                        <p>
+                            The A/B Testing produced some great feedback and the designs were well recieved.
+                            <ul>The biggest takeaways from the testing were:<br><br>
+                                <li><strong>The Pig Logo was Not Intuitive</strong> <br>
+                                    The pig logo did not read as a homepage for many. Most users thought it was a <br>
+                                    piggy bank and thus for money.
+                                </li>
+                                <br>
+                                <li><strong>Users Did Not Want to Put in Their Age</strong> <br>
+                                    Most users did not like having to put their age in, and did not see what the purpose was. <br>
+                                    They wanted to only stick to the relevant information regarding the loans
+                                </li>
+                                <br>
+                                <li><strong>Sleek Sliders</strong> <br>
+                                    Most users preferred the thinner sliders and liked seeing 
+                                    the numbers change on the side
+                                </li>
+                            </ul>
+                        </p>
+                        <br>
+                        <h1>Coding the High-Res Comps</h1>
+                        <p>With the testing completed, we quickly finished our high res comps and got to coding.
+                            The following link will take you to the live version of the Paddington App. <br>
+                            <strong>Please Note:</strong> Due to the way the app was coded, you will have to open the console (by pressing the F12 key)
+                            and shrinking the site down to 375x667 dimensions. If you're browsing on mobile, you will see it as intended.
+                        </p>
+                        <div class="tryIt">
+                            <button class="aboutMe"><a href="https://bobbym13.github.io/devlab/paddington/index.html" target="_blank" rel="noopener">Try it Out</a></button>
+                        </div>
+                        <br>
+                        <h1>Reflections for the Next Sprint</h1>
+                        <p>The Paddington App was my favorite project of the semester, due to it being so code heavy. I am very pleased
+                            with the end result and using the LEAN Method was very interesting because we had to prioritize what research to
+                            do and what to create.
+                           <br>
+                           <ul>If we had time for another sprint we would have changed the following:<br><br>
+                            <li><strong>Different Coding Languages</strong> <br>
+                                Currently, the app is coded with HTML, CSS, and javaScript. <br>
+                                However, this makes it harder to test when on a desktop, so I would <br>
+                                have liked to have created it with AngularJS, or a similar framework.
+                            </li>
+                            <br>
+                            <li><strong>More Accurate Coding</strong> <br>
+                                Because some of the designs were more difficult to code than others,<br> we had 
+                                to change certain elements in the final version. With more time, <br>
+                                I would have liked to have coded the app to look 100% like the final comps.
+                            </li>
+                            <br>
+                            <li><strong>To Have Been There From the Beginning</strong> <br>
+                                Due to an unforseeable event, I was moved to this group halfway through. <br>
+                                I would have liked to have done more in the research and testing phases.
+                            </li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+    
+            </section>
+
+        <section class="wrapper2">
+    
+            <div class="contactz">
+                    <h1 id="contactSection">Contact</h1>
+                    <div class="contactFields">
+                        <span class="contactForm">
+                            <form action="https://formspree.io/mackie.maurice@gmail.com" method="POST">
+                                <input type="email" name="_replyto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"><br>
+                                <label for="exampleInputEmail1">What's your email address?</label>
+                                <br>
+                                <textarea class="resizer" type="textarea" name="message" placeholder="let's get in contact"></textarea><br>
+                                <label for="exampleInputEmail1">Feel free to leave me feedback.</label>
+                                <br>
+                                <input type="submit" value="Send">
+                                </form>
+                        </span>
+                    </div>
+
+                    <div class="contactInfo">
+                        <div class="myContact">
+                            <h4>Link with me here</h4>
+                            <a href="https://www.linkedin.com/in/robert-maurice-4ab7a2158/"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                        <div class="myContact">
+                            <h4>Call or Text Me here</h4>
+                            <a>682-888-9042</a>
+                        </div>
+                        <div class="myContact">
+                            <h4>Email Me Here (or use the form above)</h4>
+                            <a>mackie.maurice@gmail.com</a>
+                        </div>
+                    </div>
+            </div>
+            
+        </section>
+        
+    </div>
+
+    <script type="text/javascript">
+
+        const navColor = document.getElementById("colorNav");
+        const subNav = document.getElementById("hiddenEle");
+
+        window.addEventListener('scroll', () => {
+            const scrolled = window.scrollY;
+    
+            console.log(scrolled);
+
+            if (scrollY > 300) {
+                navColor.style.backgroundColor = "white";
+                navColor.classList.add("black");
+                navColor.style.transition = ".2s";
+            } else {
+                navColor.style.backgroundColor = "";
+                navColor.classList.remove("black");
+                navColor.style.transition = ".2s";
+            }
+        });
+
+        document.getElementById('projects').addEventListener('mouseenter', openMenu);
+
+        function openMenu() {
+            document.getElementById('subNav').classList.toggle('active');
+        };
+
+        document.getElementById('projects').addEventListener('mouseleave', closeMenu);
+
+        function closeMenu() {
+            document.getElementById('subNav').classList.toggle('active');
+        };
+
+        function openNav() {
+            document.getElementById('fun').style.width = "100%";
+            document.getElementById('openBtn').style.opacity = "0";
+        };
+
+        function closeNav() {
+            document.getElementById('fun').style.width = "0";
+            document.getElementById('openBtn').style.opacity = "1";
+        };
+
+    </script>
+        
+</body>
+</html>

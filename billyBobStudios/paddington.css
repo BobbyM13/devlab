@@ -1,0 +1,645 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+p {
+    line-height: 24px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #000;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 74px;
+    padding: 0px 100px;
+    box-sizing: border-box;
+    transition: .3s ease;
+    display: flex;
+    justify-content: space-between;
+    z-index: 9999;
+}
+
+nav.black {
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 74px;
+    padding: 0px 100px;
+}
+
+nav .logo {
+    height: 74px;
+    font-size: 24px;
+    transition: .3s ease;
+    display: flex;
+    padding-top: 5px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    min-width: 143px;
+    text-align: center;
+}
+
+nav ul li a {
+    line-height: 80px;
+    color: #f7f5f5;
+    /* padding: 12px 30px; */
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .3s ease;
+}
+
+#firstLie {
+    display: flex;
+    justify-content: center;
+    padding-left: 55px;
+}
+
+#secondLie {
+    display: flex;
+    justify-content: center;
+}
+
+#lastLie {
+    display: flex;
+    justify-content: center;
+    padding-right: 25px;
+}
+
+nav ul li ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: -6px;
+}
+
+#projects {
+    /* background: red; */
+    text-align: center;
+}
+
+#projects a {
+    padding-bottom: 21.4px;
+}
+
+#subNav {
+    display: none;
+}
+
+#subNav.active {
+    display: block;
+}
+
+nav.black ul li ul li {
+    background-color: white;
+}
+
+nav.black ul li a {
+    color: #000;
+}
+
+nav ul li a:hover {
+    border-bottom: 3px solid teal;
+    transition: 0.2s ease;
+}
+
+nav ul li a:focus {
+    outline: none;
+}
+
+nav ul li a.active {
+    background: #E2472F;
+    color: #000;
+    border-radius: 6px;
+}
+
+section.hero {
+    width: 100%;
+    height: 70vh;
+    background: 
+        linear-gradient(
+        rgba(51, 51, 51, 0.5),
+        rgba(51, 51, 51, 0.5)
+    ),
+    url("images/padLogo.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.content {
+    width: 100%;
+}
+
+.infoSect {
+    width: 80%;
+    padding: 15px;
+    padding-left: 250px;
+    margin: 0 auto;
+}
+
+.infoSect p {
+    width: 70%;
+}
+
+.researchSect {
+    width: 100%;
+}
+
+.swat {
+    width: 100%;
+    height: 440px;
+    background: url("images/amazonSwot.jpg") no-repeat;
+    background-size: 75%; 
+}
+
+.navigationFlow {
+    width: 100%;
+    height: 500px;
+    background: url("images/naviFlow.png") no-repeat;
+    background-size: 75%; 
+}
+
+.fbm {
+    width: 100%;
+    height: 500px;
+    background: url("images/fbm.jpg") no-repeat;
+    background-size: 55%; 
+    background-position-x: 100px;
+}
+
+.twoPics {
+    width: 80%;
+    display: flex;
+}
+
+.twoPics div{
+    min-width: 48%;
+}
+
+.results1 {
+    width: 100%;
+    height: 400px;
+    background: url("images/amazonSurvey1.jpg") no-repeat;
+    background-size: cover;
+    background-size: 60%;
+}
+
+.results2 {
+    width: 100%;
+    height: 400px;
+    background: url("images/amazonSurvey2.jpg") no-repeat;
+    background-size: cover;
+    background-size: 70%;
+}
+
+.problem {
+    width: 100%;
+    height: 400px;
+    background: url("images/craveProblem.png") no-repeat;
+    background-size: 75%;
+}
+
+.persona {
+    width: 100%;
+    height: 380px;
+    background: url("images/padPersona1.png") no-repeat;
+    background-size: 55%;
+    background-position-x: 100px;
+}
+
+.persona2 {
+    width: 100%;
+    height: 380px;
+    background: url("images/padPersona2.png") no-repeat;
+    background-size: 55%;
+    background-position-x: 100px;
+}
+
+.journey {
+    width: 100%;
+    height: 400px;
+    background: url("images/padJourney.png") no-repeat;
+    background-size: 75%;
+}
+
+.trentFlow {
+    width: 100%;
+    height: 100%;
+    background: url("images/craveFlow.png") no-repeat;
+    background-size: 60%;
+}
+
+.wireFrames1 {
+    width: 100%;
+    height: 500px;
+    background: url("images/padWire1.png") no-repeat;
+    background-size: 75%;
+}
+
+.wireFrames2 {
+    width: 100%;
+    height: 500px;
+    background: url("images/padWire2.png") no-repeat;
+    background-size: 75%;
+}
+
+.styleGuide {
+    width: 100%;
+    height: 630px;
+    background: url("images/padStyle.png") no-repeat;
+    background-size: 75%;
+}
+
+.wireFrames3 {
+    width: 100%;
+    height: 500px;
+    background: url("images/padWire3.png") no-repeat;
+    background-size: 75%;
+}
+
+.wireFrames4 {
+    width: 100%;
+    height: 500px;
+    background: url("images/padWire4.png") no-repeat;
+    background-size: 75%;
+}
+
+ul li {
+    list-style: none;
+}
+
+#fun {
+    display: none;
+}
+
+#openBtn {
+    display: none;
+}
+
+.closeBtn {
+    display: none;
+}
+
+.tryIt {
+    width: 75%;
+    display: flex;
+    margin-top: 15px;
+}
+
+button {
+    display: inline-block;
+    border: 3px solid #197195;
+
+    padding: 1rem 2rem;
+    margin: auto;
+    border-radius: 36px;
+    text-decoration: none;
+    background: #197195;
+    color: #ffffff;
+    font-size: 1rem;
+    
+    cursor: pointer;
+    text-align: center;
+
+    transition: background 250ms ease-in-out, 
+                border 250ms ease-in-out,
+                transform 250ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+}
+
+button:hover {
+    background: #223b4b;
+    border: 3px solid #223b4b;
+    outline: none;
+}
+
+button:active {
+    transform: scale(0.79);
+    transition: transform 250ms ease;
+    outline: none;
+}
+
+.aboutMe {
+    padding: 15px 25px;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
+
+.wrapper2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper2 h1 {
+    width: 100%;
+    text-align: center;
+}
+
+.contactz {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #197195;
+    color: #fff;
+    margin-top: 30px;
+}
+
+.contactFields {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.contactFields div{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactInfo {
+    width: 100%;
+    background: #223b4b;
+    display: flex;
+    justify-content: center;
+}
+
+.myContact {
+    width: 25%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.myContact h4 {
+    margin: auto;
+}
+
+.myContact a {
+    margin: auto;
+    margin-top: 15px;
+}
+
+.myContact i {
+    color: #fff;
+    text-decoration: none;
+    font-size: 26px;
+}
+
+.myContact i:hover {
+    color: #197195;
+}
+
+.contactForm {
+    width: 100%;
+    display: flex;
+    color: white;
+}
+
+.contactForm form {
+    margin: auto;
+}
+
+.contactForm input {
+    width: 600px;
+    height: 30px;
+    padding: 15px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.contactForm input::placeholder {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.resizer {
+    padding: 15px;
+    width: 600px;
+    height: 50px;
+    resize: vertical;
+    overflow: auto;
+    max-height: 110px;
+    margin-top: 40px;
+}
+
+.resizer::placeholder {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.contactForm input:last-child {
+    width: 50px;
+    height: 30px;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.contactFields div:last-child {
+    width: 30%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.contactFields div:last-child a {
+    text-decoration: none;
+    color: white;
+    font-size: 26px;
+    text-align: center;
+    width: 30px;
+}
+
+.contactFields div:last-child div {
+    width: 100%;
+}
+
+.contactFields div:last-child p {
+    padding: 0;
+    margin: 0;
+}
+  
+
+@media screen and (max-width: 768px) {
+
+    section.hero {
+        height: 50vh;
+    }
+
+    .content {
+    width: 100%;
+    height: 100%;
+    background: red;
+    overflow: auto;
+    /* display: flex;
+    justify-content: space-between; */
+}
+
+    .transformer {
+        display: inline-block;
+        z-index: 10000;
+    }
+    
+    .bar1,.bar2,.bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: #000;
+        margin: 6px 0;
+    }
+
+    .barz1,.barz2,.barz3 {
+        width: 35px;
+        height: 5px;
+        background-color: #000;
+        margin: 6px 0;
+    }
+
+    .barz1 {
+        transform: rotate(-45deg) translate(-9px, 6px);
+    }
+
+    .barz3 {
+        margin-left: -2px;
+        transform: rotate(45deg) translate(-8px, -8px);
+    }
+
+    .barz2 {
+        opacity: 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    .closeBtn {
+        display: block;
+    }
+
+    nav {
+        flex-direction: column;
+        display: none;
+    }
+
+    #fun {
+        display: block;
+        position: fixed;
+        width: 0%;
+        height: 100vh;
+        overflow: hidden;
+        top: 0;
+        opacity: 0.9;
+        background-color: white;
+        z-index: 999999;
+        transition: all .5s;
+    }
+
+    #fun.active {
+        display: block;
+    }
+
+    .mobileHamburger {
+        width: 100%;
+        height: 10vh;
+        top: 0;
+        position: fixed;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    #openBtn {
+        display: block;
+        font-size: 24px;
+        color: white;
+        padding: 15px 25px;
+    }
+
+    .mobileNavUpper {
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5vh;
+    }
+
+    .upperLeftNav {
+        height: 20vh;
+        min-width: 200px;
+        flex: 1;
+        padding: 15px 20px;
+    }
+
+    .upperRightNav {
+        height: 20vh;
+        width: 100%;
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        padding: 15px 20px;
+    }
+
+    .mobileNavUpper a {
+        font-size: 24px;
+        color: #000;
+    }
+
+    .mobileNavLower a {
+        font-size: 24px;
+        color: #000;
+    }
+
+    .mobileNavLower {
+        width: 100%;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        /* background-color: blue; */
+    }
+
+    .mobileNavLower div{
+        margin: auto;
+    }
+
+}

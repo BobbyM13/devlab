@@ -101,7 +101,6 @@ nav ul li ul {
 }
 
 #projects {
-    /* background: red; */
     text-align: center;
 }
 
@@ -142,18 +141,18 @@ nav ul li a.active {
 
 section.hero {
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     background: 
         linear-gradient(
-        rgba(51, 51, 51, 0.9),
-        rgba(51, 51, 51, 0.9)
+        rgba(51, 51, 51, 0.95),
+        rgba(51, 51, 51, 0.95)
     ),
     url("images/hero.jpg");
     background-size: cover;
     background-position: center;
 }
 
-.content p {
+.wrapper2 p {
     width: 100%;
     text-align: justify;
     text-align: center;
@@ -162,54 +161,69 @@ section.hero {
     margin-bottom: 50px;
 }
 
-.content h1 {
+.wrapper2 h1 {
     width: 100%;
     text-align: center;
 }
 
 .aboutz {
-    display: flex;
-    flex-direction: column;
-    background-color: #225470;
-    color: white;
-    padding-top: 80px;
-    padding-bottom: 40px;
-}
-
-.contactz {
     width: 100%;
-    height: 600px;
+    height: 90vh;
     display: flex;
     flex-direction: column;
-    background-color: #225470;
-    margin-top: 299px;
-    padding-top: 60px;
-    color: #fff;
+    color: white;
 }
 
-#projectsSection {
-    margin-bottom: 50px;
+.aboutContent {
+    margin: auto;
+}
+
+.aboutUpper {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.aboutUpper h1, p {
+    margin: auto;
+}
+
+.aboutUpper p {
+    margin-top: 10px;
+    line-height: 28px;
+    width: 50%;
+    text-align: center;
+}
+
+.aboutLower {
+    display: flex;
 }
 
 .projectz {
     width: 100%;
-    height: 300px;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    margin-top: 139px;
-    padding-top: 80px;
+}
+
+.contactz {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #197195;
+    color: #fff;
 }
 
 button {
     display: inline-block;
-    border: 3px solid #122b3a;
+    border: 3px solid #197195;
 
     padding: 1rem 2rem;
     margin: auto;
-    margin-bottom: 50px;
     border-radius: 36px;
     text-decoration: none;
-    background: #122b3a;
+    background: #197195;
     color: #ffffff;
     font-size: 1rem;
     
@@ -235,6 +249,11 @@ button:active {
     outline: none;
 }
 
+button a {
+    color: #fff;
+    text-decoration: none;
+}
+
 .aboutMe {
     padding: 15px 25px;
 }
@@ -251,25 +270,20 @@ button:active {
     display: none;
 }
 
-.processz {
-    padding-top: 80px;
-}
-
 #processSection {
     width: 100%;
 }
 
 .wrapper2 {
     width: 100%;
-    height: 100vh;
-    background-color: #fff;
-    margin-top: 60px;
+    height: 100%;
 }
 
 .flexer {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
 .flexer a {
@@ -307,7 +321,7 @@ button:active {
 }
 
 .flexer2 a {
-    min-width: 50%;
+    min-width: 33.3%;
     height: 300px;
     text-decoration: none;
     display: flex;
@@ -347,7 +361,7 @@ button:active {
     padding-left: 15px;
     width: 460px;
     height: 50px;
-    border: 2px solid #225470;
+    border: 2px solid #197195;
     border-radius: 16px;
     transition: width .8s;
 }
@@ -357,32 +371,71 @@ textarea {
     margin-bottom: 10px;
 }
 
+.contactz {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #197195;
+    color: #fff;
+    margin-top: 30px;
+}
+
 .contactFields {
     width: 100%;
-    height: 400px;
-    /* background-color: red; */
     display: flex;
     justify-content: space-around;
     color: black;
+    margin-bottom: 30px;
 }
 
 .contactFields div{
     width: 65%;
-    height: 300px;
     display: flex;
     flex-direction: column;
 }
 
+.contactInfo {
+    width: 100%;
+    background: #223b4b;
+    display: flex;
+    justify-content: center;
+}
+
+.myContact {
+    width: 25%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.myContact h4 {
+    margin: auto;
+}
+
+.myContact a {
+    margin: auto;
+    margin-top: 15px;
+}
+
+.myContact i {
+    color: #fff;
+    text-decoration: none;
+    font-size: 26px;
+}
+
+.myContact i:hover {
+    color: #197195;
+}
+
 .contactForm {
-    width: 60%;
-    height: 300px;
-    /* background: blue; */
+    width: 100%;
     display: flex;
     color: white;
 }
 
 .contactForm form {
-    margin-left: 5%;
+    margin: auto;
 }
 
 .contactForm input {
@@ -411,14 +464,6 @@ textarea {
 .resizer::placeholder {
     font-family: 'Quicksand', sans-serif;
 }
-
-/* .contactForm input:nth-child(5) {
-    border: 2px solid;
-    padding: 20px; 
-    width: 300px;
-    resize: vertical;
-    overflow: auto;
-} */
 
 .contactForm input:last-child {
     width: 50px;
@@ -454,23 +499,11 @@ textarea {
     margin: 0;
 }
 
-.linkIn {
-    display: flex;
-}
-
-.linkIn i {
-    margin-left: 215px;
-}
-
-.linkIn i:hover {
-    color: grey;
-}
-
 .wireframes {
     background: 
     linear-gradient(
-        rgba(34, 84, 112, 0.9),
-        rgba(0, 184, 255, 0.9)
+        rgba(25, 113, 149, 0.9),
+        rgba(34, 84, 112, 0.9)
     ),
     url("images/paper.jpeg") no-repeat;
     background-size: cover;
@@ -479,8 +512,8 @@ textarea {
 .personas {
     background: 
     linear-gradient(
-        rgba(34, 84, 112, 0.9),
-        rgba(0, 184, 255, 0.9)
+        rgba(25, 113, 149, 0.9),
+        rgba(34, 84, 112, 0.9)
     ),
     url("images/travelPersona.png") no-repeat;
     background-size: cover;
@@ -489,8 +522,8 @@ textarea {
 .journeyMaps {
     background: 
     linear-gradient(
-        rgba(34, 84, 112, 0.9),
-        rgba(0, 184, 255, 0.9)
+        rgba(25, 113, 149, 0.9),
+        rgba(34, 84, 112, 0.9)
     ),
     url("images/journeyMap.png") no-repeat;
     background-size: cover;
@@ -499,8 +532,8 @@ textarea {
 .storyBoards {
     background: 
     linear-gradient(
-        rgba(34, 84, 112, 0.9),
-        rgba(0, 184, 255, 0.9)
+        rgba(25, 113, 149, 0.9),
+        rgba(34, 84, 112, 0.9)
     ),
     url("images/storyboard.png") no-repeat;
     background-size: cover;
@@ -509,8 +542,8 @@ textarea {
 .empathy {
     background: 
     linear-gradient(
-        rgba(34, 84, 112, 0.9),
-        rgba(0, 184, 255, 0.9)
+        rgba(25, 113, 149, 0.9),
+        rgba(34, 84, 112, 0.9)
     ),
     url("images/empathyMap.png") no-repeat;
     background-size: cover;
@@ -519,8 +552,8 @@ textarea {
 .highres {
     background: 
     linear-gradient(
-        rgba(34, 84, 112, 0.9),
-        rgba(0, 184, 255, 0.9)
+        rgba(25, 113, 149, 0.9),
+        rgba(34, 84, 112, 0.9)
     ),
     url("images/highres.jpg") no-repeat;
     background-size: cover;
@@ -529,13 +562,21 @@ textarea {
 .crave {
     background: url("images/crave.jpg") no-repeat;
     background-size: cover;
-    background-position: -100px;
+    background-position: -230px;
 }
 
 .amazon {
     background: url("images/amazon.jpg") no-repeat;
     background-size: cover;
-    background-position: -100px;
+    background-position: -230px;
+}
+
+.paddington {
+    background: url("images/padlogo.svg") no-repeat;
+    background-size: cover;
+    background-size: 90%;
+    background-position-x: 25px;
+    background-position-y: 25px;
 }
 
 @media screen and (max-width: 768px) {

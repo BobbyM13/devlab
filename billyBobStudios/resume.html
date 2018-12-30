@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Billy Bob Design</title>
+
+    <link rel="stylesheet" type="text/css" media="screen" href="resume.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
+    <!-- <script src="main.js"></script> -->
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <div id="fun">
+            <div class="mobileNavUpper">
+                <div class="upperLeftNav"><a href="#" onclick="closeNav()">Billy Bob Designs</a></div>
+                <div class="upperRightNav">
+                    <a class="closeBtn" onclick="closeNav()">
+                        <div class="transfomer2">
+                            <div class="barz1"></div>
+                            <div class="barz2"></div>
+                            <div class="barz3"></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="mobileNavLower">
+                    <div><a href="#aboutSection" onclick="closeNav()">About</a></div>
+                    <div><a href="#projectsSection" onclick="closeNav()">Projects</a></div>
+                    <div><a href="#">Contact</a></div>
+            </div>
+        </div>
+
+        <div class="mobileHamburger">
+            <a id="openBtn" onclick="openNav()">
+                <div class="transfomer">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div></a>
+        </div>
+    
+       <nav id="colorNav">
+            <div class="logo"><a href="index.html"><img src="images/logo.png" width="50%"></a></div>
+            <ul>
+                <li id="firstLie"><a href="about.html">About</a></li>
+                <li id="secondLie"><a href="resume.html">Resume</a></li>
+                <li id="projects"><a href="#projectsSection">Projects &#9662;</a>
+                    <ul id="subNav">
+                        <li><a href="crave.html">Crave</a></li>
+                        <li><a href="amazon.html">Amazon</a></li>
+                        <li><a href="paddington.html">Paddington</a></li>
+                    </ul>
+                </li>
+                <li id="lastLie"><a href="#contactSection">Contact</a></li>
+            </ul>
+       </nav>
+
+        <section class="hero"></section>
+            
+        <section class="wrapper2">
+
+            <div class="myResume">
+                <h1>Below you will find my resume</h1>
+                <p><strong>Please note:</strong> If you click on the image, it will open it in a new tab.</p>
+                <a href="resume.pdf" target="_blank" rel="noopener">
+                    <img src="images/resume.png" alt="Robert Maurice's Resume">
+                </a>
+            </div>
+
+            <div class="contactz">
+                    <h1 id="contactSection">Contact</h1>
+                    <div class="contactFields">
+                        <span class="contactForm">
+                            <form action="https://formspree.io/mackie.maurice@gmail.com" method="POST">
+                                <input type="email" name="_replyto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"><br>
+                                <label for="exampleInputEmail1">What's your email address?</label>
+                                <br>
+                                <textarea class="resizer" type="textarea" name="message" placeholder="let's get in contact"></textarea><br>
+                                <label for="exampleInputEmail1">Feel free to leave me feedback.</label>
+                                <br>
+                                <input type="submit" value="Send">
+                                </form>
+                        </span>
+                    </div>
+
+                    <div class="contactInfo">
+                        <div class="myContact">
+                            <h4>Link with me here</h4>
+                            <a href="https://www.linkedin.com/in/robert-maurice-4ab7a2158/"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                        <div class="myContact">
+                            <h4>Call or Text Me here</h4>
+                            <a>682-888-9042</a>
+                        </div>
+                        <div class="myContact">
+                            <h4>Email Me Here (or use the form above)</h4>
+                            <a>mackie.maurice@gmail.com</a>
+                        </div>
+                    </div>
+            </div>
+                
+        </section>
+</div>
+
+    <script type="text/javascript">
+
+        const navColor = document.getElementById("colorNav");
+        const subNav = document.getElementById("hiddenEle");
+
+        window.addEventListener('scroll', () => {
+            const scrolled = window.scrollY;
+    
+            console.log(scrolled);
+
+            if (scrollY > 200) {
+                navColor.style.backgroundColor = "white";
+                navColor.classList.add("black");
+                navColor.style.transition = ".2s";
+            } else {
+                navColor.style.backgroundColor = "";
+                navColor.classList.remove("black");
+                navColor.style.transition = ".2s";
+            }
+        });
+
+        document.getElementById('projects').addEventListener('mouseenter', openMenu);
+
+        function openMenu() {
+            document.getElementById('subNav').classList.toggle('active');
+        };
+
+        document.getElementById('projects').addEventListener('mouseleave', closeMenu);
+
+        function closeMenu() {
+            document.getElementById('subNav').classList.toggle('active');
+        };
+
+        function openNav() {
+            document.getElementById('fun').style.width = "100%";
+            document.getElementById('openBtn').style.opacity = "0";
+        };
+
+        function closeNav() {
+            document.getElementById('fun').style.width = "0";
+            document.getElementById('openBtn').style.opacity = "1";
+        };
+
+    </script>
+        
+</body>
+</html>
