@@ -199,6 +199,10 @@ section.hero {
     display: flex;
 }
 
+.aboutLower a {
+    margin: auto;
+}
+
 .projectz {
     width: 100%;
     height: 100%;
@@ -562,21 +566,20 @@ textarea {
 .crave {
     background: url("images/crave.jpg") no-repeat;
     background-size: cover;
-    background-position: -230px;
+    background-position: center;
 }
 
 .amazon {
     background: url("images/amazon.jpg") no-repeat;
     background-size: cover;
-    background-position: -230px;
+    background-position: center;
 }
 
 .paddington {
     background: url("images/padlogo.svg") no-repeat;
     background-size: cover;
     background-size: 90%;
-    background-position-x: 25px;
-    background-position-y: 25px;
+    background-position: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -731,7 +734,61 @@ textarea {
         cursor: pointer;
     }
 
+    .flexer2 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .flexer2 a {
+        min-width: 100%;
+        height: 300px;
+        text-decoration: none;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .flexer2 span {
+        min-width: 100%;
+        height: 300px;
+        display: flex;
+        transition: transform 0.8s;
+        cursor: pointer;
+    }
+
     .contactz {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: #197195;
+        color: #fff;
+        margin-top: 30px;
+    }
+
+    .myContact {
+        width: 33%;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .myContact a {
+        color: #fff;
+    }
+
+    .aboutz {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .aboutUpper p {
+        margin-top: 10px;
+        line-height: 28px;
+        width: 90%;
+        text-align: center;
+    }
+
+    .removeOnMobile {
         display: none;
     }
 
