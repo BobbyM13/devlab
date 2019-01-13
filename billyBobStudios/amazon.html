@@ -17,25 +17,34 @@
 
     <div class="wrapper">
 
-        <div id="fun">
-            <div class="mobileNavUpper">
-                <div class="upperLeftNav"><a href="#" onclick="closeNav()">Billy Bob Designs</a></div>
-                <div class="upperRightNav">
-                    <a class="closeBtn" onclick="closeNav()">
-                        <div class="transfomer2">
-                            <div class="barz1"></div>
-                            <div class="barz2"></div>
-                            <div class="barz3"></div>
+            <div id="fun">
+                    <div class="mobileNavUpper">
+                        <div class="upperLeftNav"><a href="index.html"><img src="images/logo.png" width="20%"></a></div>
+                        <div class="upperRightNav">
+                            <a class="closeBtn" onclick="closeNav()">
+                                <div class="transfomer2">
+                                    <div class="barz1"></div>
+                                    <div class="barz2"></div>
+                                    <div class="barz3"></div>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-            </div>
-            </div>
-            <div class="mobileNavLower">
-                    <div><a href="#aboutSection" onclick="closeNav()">About</a></div>
-                    <div><a href="#projectsSection" onclick="closeNav()">Projects</a></div>
-                    <div><a href="#">Contact</a></div>
-            </div>
-        </div>
+                    </div>
+                    <div class="mobileNavLower">
+                            <div><a href="about.html">About</a></div>
+                            <div><a id="projOpen">Projects &#9662;</a>
+        
+                                <div id="subSection">
+                                    <a href="crave.html"><div class="subber">Crave</div></a>  
+                                    <a href="amazon.html"><div class="subber">Amazon</div></a>
+                                    <a href="paddington.html"><div class="subber">Paddington</div></a>
+                                </div>
+            
+                              </div>
+                            <div><a href="resume.html">Resume</a></div>
+                            <div><a href="#">Contact</a></div>
+                    </div>
+                </div>
 
         <div class="mobileHamburger">
             <a id="openBtn" onclick="openNav()">
@@ -108,12 +117,14 @@
                         <p>After receiving the survey results, we interviewed 3 people in the average demographic.
                             Below are some of their quotes about their shopping habits and Amazon in general.
                         </p>
+                        <br>
                         <ul>
                             <li>“Usually the search is enough to get me to where I’m going.”
                                 <br><br>
                             </li>
                             <li>“The site just feels cluttered and busy, I feel trapped when I shop.”</li>
                         </ul>
+                        <br>
                         <p>The responses also lined up with the survey results, showing that people mostly use the search bar and
                             also feel that the current Amazon flow is "cluttered."
                         </p>
@@ -147,6 +158,7 @@
                         <h1>Testing our designs and our assumptions</h1>
                         <p>With the first round of wireframes done, we set out to test over 2 days. To this end, we went to the
                            Austin Public Library on Saturday and Radio Coffee on Sunday, with iteration between.
+                        </p>
                             <ul>From this round of testing we discovered 3 key insights: <br><br>
                                 <li><strong>People Don't Like Pop-Up Modals</strong> <br>
                                     All of the testers except one expressed dislike for a pop-up error modal, they would prefer <br>to see that on the page or highlighted with color.
@@ -162,7 +174,7 @@
                                     the search page, and having some filters be on the product page itself.
                                 </li>
                             </ul>
-                        </p>
+                            <br>
                         <p>After this round of testing, we utilized the feedback and iterated on our wiresframes.</p>
                         <div class="wireFrames2"></div>
                         <p>We quickly iterated and made changes based on the feedback we got from Saturday and tested again on Sunday.
@@ -186,7 +198,7 @@
                         <h1>Reflections for the Next Sprint</h1>
                         <p>Having completed the three high-res comps, and presenting it to the class, we were now done with this sprint.
                             Overall, we felt it was a successful solution based on data and user's needs. However, there is always room to
-                            improve.
+                            improve.</p>
                            <br>
                            <ul>If we had time for another sprint we would have changed the following:<br><br>
                             <li><strong>More Rounds of Testing</strong> <br>
@@ -207,6 +219,8 @@
                                 HTML, CSS, and Javascript.
                             </li>
                         </ul>
+                        <br>
+                        <p>
                         This project gave us a greater understanding of just how much work goes into e-commerce <br>websites,
                         there are so many moving parts that you could spend years just testing what already <br>exists. Going forward,
                         I would love the opportunity to work on the development of an <br>e-commerce site to see how it comes together
@@ -229,7 +243,7 @@
                                 <br>
                                 <textarea class="resizer" type="textarea" name="message" placeholder="let's get in contact"></textarea><br>
                                 <label for="exampleInputEmail1">Feel free to leave me feedback.</label>
-                                <br>
+                                <br><br>
                                 <input type="submit" value="Send">
                                 </form>
                         </span>
@@ -246,7 +260,7 @@
                         </div>
                         <div class="myContact">
                             <h4>Email Me Here (or use the form above)</h4>
-                            <a>mackie.maurice@gmail.com</a>
+                            <a href="mailto:mackie.maurice@gmail.com">mackie.maurice@gmail.com</a>
                         </div>
                     </div>
             </div>
@@ -255,50 +269,7 @@
         
     </div>
 
-    <script type="text/javascript">
-
-        const navColor = document.getElementById("colorNav");
-        const subNav = document.getElementById("hiddenEle");
-
-        window.addEventListener('scroll', () => {
-            const scrolled = window.scrollY;
-    
-            console.log(scrolled);
-
-            if (scrollY > 300) {
-                navColor.style.backgroundColor = "white";
-                navColor.classList.add("black");
-                navColor.style.transition = ".2s";
-            } else {
-                navColor.style.backgroundColor = "";
-                navColor.classList.remove("black");
-                navColor.style.transition = ".2s";
-            }
-        });
-
-        document.getElementById('projects').addEventListener('mouseenter', openMenu);
-
-        function openMenu() {
-            document.getElementById('subNav').classList.toggle('active');
-        };
-
-        document.getElementById('projects').addEventListener('mouseleave', closeMenu);
-
-        function closeMenu() {
-            document.getElementById('subNav').classList.toggle('active');
-        };
-
-        function openNav() {
-            document.getElementById('fun').style.width = "100%";
-            document.getElementById('openBtn').style.opacity = "0";
-        };
-
-        function closeNav() {
-            document.getElementById('fun').style.width = "0";
-            document.getElementById('openBtn').style.opacity = "1";
-        };
-
-    </script>
+    <script src="scripts.js"></script>
         
 </body>
 </html>

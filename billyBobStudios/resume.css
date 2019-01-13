@@ -429,7 +429,7 @@ button a {
         height: 100vh;
         overflow: hidden;
         top: 0;
-        opacity: 0.9;
+        opacity: 0.97;
         background-color: white;
         z-index: 999999;
         transition: all .5s;
@@ -470,6 +470,10 @@ button a {
         padding: 15px 20px;
     }
 
+    .upperLeftNav img {
+        margin-top: -9px;
+    }
+
     .upperRightNav {
         height: 20vh;
         width: 100%;
@@ -491,15 +495,38 @@ button a {
 
     .mobileNavLower {
         width: 100%;
-        height: 60vh;
+        height: 70vh;
         display: flex;
         flex-direction: column;
         /* background-color: blue; */
     }
-
+ 
     .mobileNavLower div{
         margin: auto;
+        min-width: 140px;
     }
+ 
+     #subSection {
+         display: none;
+     }
+ 
+     #subSection.active {
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+         margin-top: 30px;
+         margin-bottom: 30px;
+         margin-left: 15px;
+     }
+ 
+     #subSection a {
+         margin-bottom: 20px;
+         width: 100%;
+     }
+ 
+     #subSection a:last-child {
+         margin-bottom: 0px;
+     }
 
     .flexer {
         display: flex;
@@ -508,13 +535,34 @@ button a {
 
     .flexer a {
         min-width: 100%;
-        height: 300px;
+        height: 150px;
         text-decoration: none;
         display: flex;
         flex-wrap: wrap;
     }
     
     .flexer span {
+        min-width: 100%;
+        height: 150px;
+        display: flex;
+        transition: transform 0.8s;
+        /* cursor: pointer; */
+    }
+
+    .flexer2 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .flexer2 a {
+        min-width: 100%;
+        height: 300px;
+        text-decoration: none;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .flexer2 span {
         min-width: 100%;
         height: 300px;
         display: flex;
@@ -523,7 +571,77 @@ button a {
     }
 
     .contactz {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: #197195;
+        color: #fff;
+        margin-top: 30px;
+    }
+
+    .myContact {
+        width: 33%;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .myContact a {
+        color: #fff;
+    }
+
+    .aboutz {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .aboutUpper p {
+        margin-top: 10px;
+        line-height: 28px;
+        width: 90%;
+        text-align: center;
+    }
+
+    .removeOnMobile {
         display: none;
+    }
+
+    .contactForm {
+        width: 100%;
+        display: flex;
+        color: white;
+    }
+    
+    .contactForm form {
+        margin: auto;
+    }
+    
+    .contactForm input[type=email] {
+        width: 400px;
+        height: 30px;
+        padding: 15px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        font-family: 'Quicksand', sans-serif;
+    }
+
+    .contactForm input[type=submit] {
+        width: 400px;
+        height: 50px;
+        font-size: 20px;
+    }
+    
+    .resizer {
+        width: 400px;
+    }
+    
+    .contactInfo {
+        flex-direction: column;
+    }
+
+    .myContact {
+        width: 100%;
     }
 
 }
