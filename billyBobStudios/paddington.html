@@ -19,7 +19,13 @@
 
         <div id="fun">
             <div class="mobileNavUpper">
-                <div class="upperLeftNav"><a href="#" onclick="closeNav()">Billy Bob Designs</a></div>
+                <div class="upperLeftNav"></div>
+                <div class="upperMidNav">
+                    <a href="index.html">
+                        <div class="logoUp"></div>
+                        <div class="logoDown"> <h5>Billy Bob Studio</h5> </div>
+                    </a>
+                </div>
                 <div class="upperRightNav">
                     <a class="closeBtn" onclick="closeNav()">
                         <div class="transfomer2">
@@ -28,12 +34,22 @@
                             <div class="barz3"></div>
                         </div>
                     </a>
-            </div>
+                </div>
             </div>
             <div class="mobileNavLower">
-                    <div><a href="#aboutSection" onclick="closeNav()">About</a></div>
-                    <div><a href="#projectsSection" onclick="closeNav()">Projects</a></div>
-                    <div><a href="#">Contact</a></div>
+                    <div><a href="about.html">About</a></div>
+                    <div><a href="design.html">Graphic Design</a></div>
+                    <div><a id="projOpen">UX Projects &#9662;</a>
+
+                        <div id="subSection">
+                            <a href="crave.html"><div class="subber">Crave</div></a>  
+                            <a href="amazon.html"><div class="subber">Amazon</div></a>
+                            <a href="paddington.html"><div class="subber">Paddington</div></a>
+                        </div>
+    
+                      </div>
+                    <div><a href="resume.html">Resume</a></div>
+                    <div><a href="#contactSection" onclick="closeNav()">Contact</a></div>
             </div>
         </div>
 
@@ -51,7 +67,8 @@
             <ul>
                 <li id="firstLie"><a href="about.html">About</a></li>
                 <li id="secondLie"><a href="resume.html">Resume</a></li>
-                <li id="projects"><a href="#">Projects &#9662;</a>
+                <li id="thirdLie"><a href="design.html">Graphic Design</a></li>
+                <li id="projects"><a href="#projectsSection">UX Projects &#9662;</a>
                     <ul id="subNav">
                         <li><a href="crave.html">Crave</a></li>
                         <li><a href="amazon.html">Amazon</a></li>
@@ -77,13 +94,19 @@
                         <h1>Diving In</h1>
                         <p>Because of the time constraints and usage of the LEAN Model, we jumped right into creating user personas and a journey map.
                         </p>
-                        <div class="persona"></div>
-                        <div class="persona2"></div>
+                        <div class="images">
+                            <img src="images/padPersona1.jpg" alt="Paddington User Persona 1" class="responsive">
+                        </div>
+                        <div class="images">
+                            <img src="images/padPersona2.jpg" alt="Paddington User Persona 2" class="responsive">
+                        </div>
                         <p>
                             Both Audrey and Devan provided great insights and a compass for us to follow throughout the design.
                             However, Devan's financial situation was what influenced the numbers part of the app the most.
                         </p>
-                        <div class="journey"></div>
+                        <div class="images">
+                            <img src="images/padJourney.png" alt="Paddington User Journey" class="responsive">
+                        </div>
                         <h1>Devan's Emotional Journey</h1>
                         <p>
                             After creating Audrey and Devan, we created the final part of our pre-design phase, the journey map.
@@ -94,42 +117,45 @@
                             We made this decision in order to be able to test them more quickly.
                         </p>
                         <div class="twoPics">
-                            <div class="wireFrames1"></div>
-                            <div class="wireFrames2"></div>
+                            <div><img src="images/padWire1.png" alt="Paddington Wireframe 1" class="responsive"></div>
+                            <div><img src="images/padWire2.png" alt="Paddington Wireframe 2" class="responsive"></div> 
                         </div> 
                         <h1>Testing and Iteration</h1>
                         <p>With the low-res wireframes completed, we tested and recieved some great insights.
                            After the first round of insights, we quickly iterated. By this time though, the style guide was completed,
                            so we applied that to our 2nd round wireframes.
                         </p>
-                        <div class="styleGuide"></div>
+                        <div class="images">
+                            <img src="images/padStyle.png" alt="Paddington Stlye Guide" class="responsive">
+                        </div>
                         <h1>A/B Testing</h1>
                         <p>
                             Now that the wireframes and style guide were paired together, we had high-res comps to test.
                             This was done by A/B testing 5 users, 3 men and 2 women.
                         </p>
                         <div class="twoPics">
-                            <div class="wireFrames3"></div>
-                            <div class="wireFrames4"></div>
-                        </div>
+                            <div><img src="images/padWire3.png" alt="Paddington Testing A Design" class="responsive"></div>
+                            <div><img src="images/padWire4.png" alt="Paddington Testing B Design" class="responsive"></div> 
+                        </div> 
                         <br>
                         <h1>Test Results</h1>
                         <p>
-                            The A/B Testing produced some great feedback and the designs were well recieved.
-                            <ul>The biggest takeaways from the testing were:<br><br>
+                            The A/B Testing produced some great feedback and overall, the designs were well recieved.<br>
+                            The biggest takeaways from the testing:<br><br>
+                            <ul>
                                 <li><strong>The Pig Logo was Not Intuitive</strong> <br>
-                                    The pig logo did not read as a homepage for many. Most users thought it was a <br>
+                                    The pig logo did not read as a homepage for many. Most users thought it was a
                                     piggy bank and thus for money.
                                 </li>
                                 <br>
                                 <li><strong>Users Did Not Want to Put in Their Age</strong> <br>
-                                    Most users did not like having to put their age in, and did not see what the purpose was. <br>
-                                    They wanted to only stick to the relevant information regarding the loans
+                                    Most users did not like having to put their age in, and did not see what the purpose was.
+                                    They wanted to only stick to the relevant information regarding the loans.
                                 </li>
                                 <br>
                                 <li><strong>Sleek Sliders</strong> <br>
                                     Most users preferred the thinner sliders and liked seeing 
-                                    the numbers change on the side
+                                    the numbers change on the side.
                                 </li>
                             </ul>
                         </p>
@@ -147,27 +173,27 @@
                         <h1>Reflections for the Next Sprint</h1>
                         <p>The Paddington App was my favorite project of the semester, due to it being so code heavy. I am very pleased
                             with the end result and using the LEAN Method was very interesting because we had to prioritize what research to
-                            do and what to create.
+                            do and what to create.<br>
+                            If we had time for another sprint we would have changed the following:</p>
                            <br>
-                           <ul>If we had time for another sprint we would have changed the following:<br><br>
+                           <ul>
                             <li><strong>Different Coding Languages</strong> <br>
-                                Currently, the app is coded with HTML, CSS, and javaScript. <br>
-                                However, this makes it harder to test when on a desktop, so I would <br>
+                                Currently, the app is coded with HTML, CSS, and javaScript.
+                                However, this makes it harder to test when on a desktop, so I would
                                 have liked to have created it with AngularJS, or a similar framework.
                             </li>
                             <br>
                             <li><strong>More Accurate Coding</strong> <br>
-                                Because some of the designs were more difficult to code than others,<br> we had 
-                                to change certain elements in the final version. With more time, <br>
+                                Because some of the designs were more difficult to code than others, we had 
+                                to change certain elements in the final version. With more time,
                                 I would have liked to have coded the app to look 100% like the final comps.
                             </li>
                             <br>
-                            <li><strong>To Have Been There From the Beginning</strong> <br>
-                                Due to an unforseeable event, I was moved to this group halfway through. <br>
+                            <li><strong>To Have Been There From the Beginning</strong>
+                                Due to an unforseeable event, I was moved to this group halfway through.
                                 I would have liked to have done more in the research and testing phases.
                             </li>
                         </ul>
-                        </p>
                     </div>
                 </div>
     
@@ -185,24 +211,21 @@
                                 <br>
                                 <textarea class="resizer" type="textarea" name="message" placeholder="let's get in contact"></textarea><br>
                                 <label for="exampleInputEmail1">Feel free to leave me feedback.</label>
-                                <br>
+                                <br><br>
                                 <input type="submit" value="Send">
-                                </form>
+                            </form>
                         </span>
                     </div>
 
                     <div class="contactInfo">
                         <div class="myContact">
-                            <h4>Link with me here</h4>
-                            <a href="https://www.linkedin.com/in/robert-maurice-4ab7a2158/"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://www.linkedin.com/in/robert-maurice-4ab7a2158/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
                         </div>
                         <div class="myContact">
-                            <h4>Call or Text Me here</h4>
                             <a>682-888-9042</a>
                         </div>
                         <div class="myContact">
-                            <h4>Email Me Here (or use the form above)</h4>
-                            <a>mackie.maurice@gmail.com</a>
+                            <a href="mailto:robertmaurice.business@gmail.com">robertmaurice.business@gmail.com</a>
                         </div>
                     </div>
             </div>

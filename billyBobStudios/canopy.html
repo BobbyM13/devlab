@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Billy Bob Design</title>
+
+    <link rel="stylesheet" type="text/css" media="screen" href="collegeProj.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
+    <!-- <script src="main.js"></script> -->
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <div id="fun">
+            <div class="mobileNavUpper">
+                <div class="upperLeftNav"></div>
+                <div class="upperMidNav">
+                    <a href="index.html">
+                        <div class="logoUp"></div>
+                        <div class="logoDown"> <h5>Billy Bob Studio</h5> </div>
+                    </a>
+                </div>
+                <div class="upperRightNav">
+                    <a class="closeBtn" onclick="closeNav()">
+                        <div class="transfomer2">
+                            <div class="barz1"></div>
+                            <div class="barz2"></div>
+                            <div class="barz3"></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="mobileNavLower">
+                    <div><a href="about.html">About</a></div>
+                    <div><a href="design.html">Graphic Design</a></div>
+                    <div><a id="projOpen">UX Projects &#9662;</a>
+
+                        <div id="subSection">
+                            <a href="crave.html"><div class="subber">Crave</div></a>  
+                            <a href="amazon.html"><div class="subber">Amazon</div></a>
+                            <a href="paddington.html"><div class="subber">Paddington</div></a>
+                        </div>
+    
+                      </div>
+                    <div><a href="resume.html">Resume</a></div>
+                    <div><a href="#contactSection" onclick="closeNav()">Contact</a></div>
+            </div>
+        </div>
+
+        <div class="mobileHamburger">
+            <a id="openBtn" onclick="openNav()">
+                <div class="transfomer">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div></a>
+        </div>
+    
+       <nav id="colorNav">
+            <div class="logo"><a href="index.html"><img src="images/logo.png" width="50%"></a></div>
+            <ul>
+                <li id="firstLie"><a href="about.html">About</a></li>
+                <li id="secondLie"><a href="resume.html">Resume</a></li>
+                <li id="thirdLie"><a href="design.html">Graphic Design</a></li>
+                <li id="projects"><a href="#projectsSection">UX Projects &#9662;</a>
+                    <ul id="subNav">
+                        <li><a href="crave.html">Crave</a></li>
+                        <li><a href="amazon.html">Amazon</a></li>
+                        <li><a href="paddington.html">Paddington</a></li>
+                    </ul>
+                </li>
+                <li id="lastLie"><a href="#contactSection">Contact</a></li>
+            </ul>
+       </nav>
+        
+        <section class="hero"></section>
+            
+        <section class="wrapper2">
+
+            <div class="projectz">
+                    <div id="projectsSection">
+                        <h1 class="procssez">Canopy Magazine</h1>
+
+                        <div class="categories">
+                            <h4 class="light-grey">category:</h4>
+                            <h4>Branding, Publication</h4>
+                        </div>
+
+                        <p>
+                            The goal of this project was to design the nameplate for a magazine as well as a cover, table of contents and spread. 
+                            Shape was the critical aspect of this piece. Every part of the magazine incorporates circles into the design.
+                        </p>
+
+                        <div class="imageSection">
+                            <img src="images/canopy.jpg" alt="Images of Canopy Magazine Renders" title="Canopy Magazine" class="responsive">
+                        </div>
+                    </div>
+            
+                </div>
+
+                <div class="contactz">
+                        <h1 id="contactSection">Contact</h1>
+                        <div class="contactFields">
+                            <span class="contactForm">
+                                <form action="https://formspree.io/mackie.maurice@gmail.com" method="POST">
+                                    <input type="email" name="_replyto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"><br>
+                                    <label for="exampleInputEmail1">What's your email address?</label>
+                                    <br>
+                                    <textarea class="resizer" type="textarea" name="message" placeholder="let's get in contact"></textarea><br>
+                                    <label for="exampleInputEmail1">Feel free to leave me feedback.</label>
+                                    <br><br>
+                                    <input type="submit" value="Send">
+                                </form>
+                            </span>
+                        </div>
+    
+                        <div class="contactInfo">
+                            <div class="myContact">
+                                <a href="https://www.linkedin.com/in/robert-maurice-4ab7a2158/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                            <div class="myContact">
+                                <a>682-888-9042</a>
+                            </div>
+                            <div class="myContact">
+                                <a href="mailto:robertmaurice.business@gmail.com">robertmaurice.business@gmail.com</a>
+                            </div>
+                        </div>
+                </div>
+                
+            </section>
+</div>
+    
+    <script src="scripts.js"></script>
+        
+</body>
+</html>

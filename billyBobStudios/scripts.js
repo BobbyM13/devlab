@@ -5,8 +5,6 @@ const mobileSubNav = document.getElementById("projOpen");
 window.addEventListener('scroll', () => {
     const scrolled = window.scrollY;
 
-    console.log(scrolled);
-
     if (scrollY > 200) {
         navColor.style.backgroundColor = "white";
         navColor.classList.add("black");

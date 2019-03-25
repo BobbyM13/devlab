@@ -78,12 +78,18 @@ nav ul li a {
 #firstLie {
     display: flex;
     justify-content: center;
-    padding-left: 55px;
+    padding-left: 85px;
 }
 
 #secondLie {
     display: flex;
     justify-content: center;
+}
+
+#thirdLie {
+    display: flex;
+    justify-content: center;
+    padding-right: 20px;
 }
 
 #lastLie {
@@ -125,7 +131,7 @@ nav.black ul li a {
 }
 
 nav ul li a:hover {
-    border-bottom: 3px solid teal;
+    border-bottom: 3px solid #197195;
     transition: 0.2s ease;
 }
 
@@ -166,49 +172,6 @@ section.hero {
     text-align: center;
 }
 
-button {
-    display: inline-block;
-    border: 3px solid #197195;
-
-    padding: 1rem 2rem;
-    margin: auto;
-    border-radius: 36px;
-    text-decoration: none;
-    background: #197195;
-    color: #ffffff;
-    font-size: 1rem;
-    
-    cursor: pointer;
-    text-align: center;
-
-    transition: background 250ms ease-in-out, 
-                transform 250ms ease;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    outline: none;
-}
-
-button:hover {
-    background: #223b4b;
-    border: 3px solid #223b4b;
-    outline: none;
-}
-
-button:active {
-    transform: scale(0.79);
-    transition: transform 250ms ease;
-    outline: none;
-}
-
-button a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.aboutMe {
-    padding: 15px 25px;
-}
-
 #fun {
     display: none;
 }
@@ -235,6 +198,10 @@ button a {
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
+}
+
+.myResume h1 {
+    color: #197195;
 }
 
 .myResume img {
@@ -280,13 +247,11 @@ button a {
     flex-direction: column;
 }
 
-.myContact h4 {
-    margin: auto;
-}
-
 .myContact a {
     margin: auto;
-    margin-top: 15px;
+    margin-top: 5px;
+    text-decoration: none;
+    color: #fff;
 }
 
 .myContact i {
@@ -325,7 +290,7 @@ button a {
 .resizer {
     padding: 15px;
     width: 600px;
-    height: 50px;
+    height: 100px;
     resize: vertical;
     overflow: auto;
     max-height: 110px;
@@ -370,10 +335,36 @@ button a {
     margin: 0;
 }
 
+.contactForm input[type=submit] {
+    width: 600px;
+    height: 60px;
+    font-size: 18px;
+    border-radius: 8px;
+    background: #fff;
+    border: none;
+    box-shadow: 6px 6px 25px #515151;
+    transition: all .8s;
+    cursor: pointer;
+}
+
+.contactForm input[type=submit]:hover {
+    border: none;
+    transform: scale(0.9);
+    transition: all .8s;
+}
+
 @media screen and (max-width: 768px) {
 
     section.hero {
         height: 50vh;
+    }
+
+    .myResume {
+        width: 90%;
+    }
+
+    h1 {
+        color: #197195;
     }
 
     .transformer {
@@ -467,11 +458,39 @@ button a {
         height: 20vh;
         min-width: 200px;
         flex: 1;
-        padding: 15px 20px;
     }
 
-    .upperLeftNav img {
-        margin-top: -9px;
+    .upperMidNav {
+        height: 20vh;
+        min-width: 33%;
+        flex: 1;
+    }
+    
+    .upperMidNav a {
+        display: flex;
+        flex-direction: column;   
+    }
+
+    .upperMidNav a .logoUp {
+        width: 100%;
+        height: 11vh;
+        background: url("images/logo.jpg") no-repeat;
+        background-size: contain;
+        background-size: 30%;
+        background-position: center;
+        background-position-y: 10px;
+    }
+
+    .upperMidNav a .logoDown {
+        width: 100%;
+        height: 5vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .logoDown h5 {
+        margin: auto;
     }
 
     .upperRightNav {
@@ -488,11 +507,6 @@ button a {
         color: #000;
     }
 
-    .mobileNavLower a {
-        font-size: 24px;
-        color: #000;
-    }
-
     .mobileNavLower {
         width: 100%;
         height: 70vh;
@@ -503,7 +517,13 @@ button a {
  
     .mobileNavLower div{
         margin: auto;
-        min-width: 140px;
+        min-width: 150px;
+    }
+
+    .mobileNavLower div a{
+        margin-left: 12%;
+        min-width: 150px;
+        font-size: 22px;
     }
  
      #subSection {
@@ -511,64 +531,21 @@ button a {
      }
  
      #subSection.active {
-         display: flex;
-         flex-direction: column;
-         justify-content: space-between;
-         margin-top: 30px;
-         margin-bottom: 30px;
-         margin-left: 15px;
-     }
- 
-     #subSection a {
-         margin-bottom: 20px;
-         width: 100%;
-     }
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+
+    #subSection a {
+        margin-bottom: 20px;
+        width: 100%;
+        color: #197195;
+    }
  
      #subSection a:last-child {
          margin-bottom: 0px;
      }
-
-    .flexer {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .flexer a {
-        min-width: 100%;
-        height: 150px;
-        text-decoration: none;
-        display: flex;
-        flex-wrap: wrap;
-    }
-    
-    .flexer span {
-        min-width: 100%;
-        height: 150px;
-        display: flex;
-        transition: transform 0.8s;
-        /* cursor: pointer; */
-    }
-
-    .flexer2 {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .flexer2 a {
-        min-width: 100%;
-        height: 300px;
-        text-decoration: none;
-        display: flex;
-        flex-wrap: wrap;
-    }
-    
-    .flexer2 span {
-        min-width: 100%;
-        height: 300px;
-        display: flex;
-        transition: transform 0.8s;
-        cursor: pointer;
-    }
 
     .contactz {
         width: 100%;
@@ -591,20 +568,12 @@ button a {
         color: #fff;
     }
 
-    .aboutz {
-        width: 100%;
-        height: 50vh;
-    }
-
-    .aboutUpper p {
-        margin-top: 10px;
-        line-height: 28px;
-        width: 90%;
-        text-align: center;
-    }
-
     .removeOnMobile {
         display: none;
+    }
+
+    .contactz h1 {
+        color: #fff;
     }
 
     .contactForm {
@@ -643,5 +612,193 @@ button a {
     .myContact {
         width: 100%;
     }
+}
 
+@media screen and (max-width: 415px) {
+
+    .mobileNavLower {
+        width: 100%;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobileNavLower div a{
+        margin-left: 18%;
+    }
+
+    #subSection {
+        text-align: left;
+    }
+
+    .upperLeftNav {
+        height: 20vh;
+        min-width: 28%;
+        flex: 1;
+        /* background: red; */
+    }
+
+    .upperMidNav {
+        height: 20vh;
+        min-width: 38%;
+        flex: 1;
+        /* background: blue; */
+    }
+    
+    .upperMidNav a {
+        display: flex;
+        flex-direction: column; 
+        /* background: green;   */
+    }
+
+    .upperMidNav a .logoUp {
+        width: 100%;
+        height: 9vh;
+        background: url("images/logo.jpg") no-repeat;
+        background-size: contain;
+        background-size: 40%;
+        background-position: center;
+        background-position-y: 10px;
+    }
+
+    .upperMidNav a .logoDown {
+        width: 100%;
+        height: 5vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        /* background: teal; */
+    }
+
+    .logoDown h5 {
+        margin: auto;
+        font-size: 18px;
+    }
+
+    .myResume {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .myResume p {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 22px;
+        color: #197195;
+    }
+
+    .contactForm input[type=email] {
+        width: 300px;
+        height: 30px;
+        padding: 15px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        font-family: 'Quicksand', sans-serif;
+    }
+
+    .contactForm input[type=submit] {
+        width: 300px;
+        height: 50px;
+        font-size: 20px;
+    }
+    
+    .resizer {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 376px) {
+
+    .mobileNavLower {
+        width: 100%;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        /* background-color: blue; */
+    }
+
+    .mobileNavLower div a{
+        margin-left: 14%;
+        min-width: 150px;
+        font-size: 22px;
+    }
+
+    .upperLeftNav {
+        height: 20vh;
+        min-width: 25%;
+        flex: 1;
+        /* background: red; */
+    }
+
+    .upperMidNav {
+        height: 20vh;
+        min-width: 40%;
+        flex: 1;
+        /* background: blue; */
+    }
+    
+    .upperMidNav a {
+        display: flex;
+        flex-direction: column; 
+        /* background: green;   */
+    }
+
+    .upperMidNav a .logoUp {
+        width: 100%;
+        height: 9vh;
+        background: url("images/logo.jpg") no-repeat;
+        background-size: contain;
+        background-size: 40%;
+        background-position: center;
+        background-position-y: 10px;
+    }
+
+    .upperMidNav a .logoDown {
+        width: 100%;
+        height: 5vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        /* background: teal; */
+    }
+
+    .logoDown h5 {
+        margin: auto;
+        font-size: 16px;
+    }
+
+    .myResume {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .myResume p {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 22px;
+        color: #197195;
+    }
+
+    .contactForm input[type=email] {
+        width: 300px;
+        height: 30px;
+        padding: 15px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        font-family: 'Quicksand', sans-serif;
+    }
+
+    .contactForm input[type=submit] {
+        width: 300px;
+        height: 50px;
+        font-size: 20px;
+    }
+    
+    .resizer {
+        width: 300px;
+    }
 }

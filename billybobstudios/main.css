@@ -78,13 +78,20 @@ nav ul li a {
 #firstLie {
     display: flex;
     justify-content: center;
-    padding-left: 55px;
+    padding-left: 85px;
 }
 
 #secondLie {
     display: flex;
     justify-content: center;
 }
+
+#thirdLie {
+    display: flex;
+    justify-content: center;
+    padding-right: 20px;
+}
+
 
 #lastLie {
     display: flex;
@@ -125,7 +132,7 @@ nav.black ul li a {
 }
 
 nav ul li a:hover {
-    border-bottom: 3px solid teal;
+    border-bottom: 3px solid #197195;
     transition: 0.2s ease;
 }
 
@@ -413,13 +420,9 @@ textarea {
     flex-direction: column;
 }
 
-.myContact h4 {
-    margin: auto;
-}
-
 .myContact a {
     margin: auto;
-    margin-top: 15px;
+    margin-top: 5px;
     text-decoration: none;
     color: #fff;
 }
@@ -460,7 +463,7 @@ textarea {
 .resizer {
     padding: 15px;
     width: 600px;
-    height: 50px;
+    height: 100px;
     resize: vertical;
     overflow: auto;
     max-height: 110px;
@@ -517,7 +520,7 @@ textarea {
         rgba(25, 113, 149, 0.9),
         rgba(34, 84, 112, 0.9)
     ),
-    url("images/paper.jpeg") no-repeat;
+    url("images/paper.jpg") no-repeat;
     background-size: cover;
 }
 
@@ -527,7 +530,7 @@ textarea {
         rgba(25, 113, 149, 0.9),
         rgba(34, 84, 112, 0.9)
     ),
-    url("images/travelPersona.png") no-repeat;
+    url("images/travelPersona.jpg") no-repeat;
     background-size: cover;
 }
 
@@ -537,7 +540,7 @@ textarea {
         rgba(25, 113, 149, 0.9),
         rgba(34, 84, 112, 0.9)
     ),
-    url("images/journeyMap.png") no-repeat;
+    url("images/journeyMap.jpg") no-repeat;
     background-size: cover;
 }
 
@@ -547,7 +550,7 @@ textarea {
         rgba(25, 113, 149, 0.9),
         rgba(34, 84, 112, 0.9)
     ),
-    url("images/storyboard.png") no-repeat;
+    url("images/storyboard.jpg") no-repeat;
     background-size: cover;
 }
 
@@ -590,10 +593,36 @@ textarea {
     background-position: center;
 }
 
+.contactForm input[type=submit] {
+    width: 600px;
+    height: 60px;
+    font-size: 18px;
+    border-radius: 8px;
+    background: #fff;
+    border: none;
+    box-shadow: 6px 6px 25px #515151;
+    transition: all .8s;
+    cursor: pointer;
+}
+
+.contactForm input[type=submit]:hover {
+    border: none;
+    transform: scale(0.9);
+    transition: all .8s;
+}
+
 @media screen and (max-width: 768px) {
 
     section.hero {
         height: 50vh;
+    }
+
+    .aboutUpper h1 {
+        color: #fff;
+    }
+
+    h1 {
+        color: #197195;
     }
 
     .transformer {
@@ -632,6 +661,18 @@ textarea {
         text-decoration: none;
         color: #000;
     }
+
+    .wrapper2 p {
+        width: 70%;
+        font-size: 14px;
+    }
+
+    .aboutUpper p {
+        width: 70%;
+        font-size: 14px;
+    }
+
+    /* Navigation */
 
     .closeBtn {
         display: block;
@@ -687,11 +728,39 @@ textarea {
         height: 20vh;
         min-width: 200px;
         flex: 1;
-        padding: 15px 20px;
     }
 
-    .upperLeftNav img {
-        margin-top: -9px;
+    .upperMidNav {
+        height: 20vh;
+        min-width: 33%;
+        flex: 1;
+    }
+    
+    .upperMidNav a {
+        display: flex;
+        flex-direction: column;   
+    }
+
+    .upperMidNav a .logoUp {
+        width: 100%;
+        height: 11vh;
+        background: url("images/logo.jpg") no-repeat;
+        background-size: contain;
+        background-size: 30%;
+        background-position: center;
+        background-position-y: 10px;
+    }
+
+    .upperMidNav a .logoDown {
+        width: 100%;
+        height: 5vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .logoDown h5 {
+        margin: auto;
     }
 
     .upperRightNav {
@@ -723,7 +792,13 @@ textarea {
  
     .mobileNavLower div{
         margin: auto;
-        min-width: 140px;
+        min-width: 200px;
+    }
+    
+    .mobileNavLower div a{
+        margin-left: 5%;
+        min-width: 200px;
+        font-size: 22px;
     }
  
      #subSection {
@@ -731,22 +806,23 @@ textarea {
      }
  
      #subSection.active {
-         display: flex;
-         flex-direction: column;
-         justify-content: space-between;
-         margin-top: 30px;
-         margin-bottom: 30px;
-         margin-left: 15px;
-     }
- 
-     #subSection a {
-         margin-bottom: 20px;
-         width: 100%;
-     }
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+
+    #subSection a {
+        margin-bottom: 20px;
+        width: 100%;
+        color: #197195;
+    }
  
      #subSection a:last-child {
          margin-bottom: 0px;
      }
+
+    /* End Navigation */
 
     .flexer {
         display: flex;
@@ -819,12 +895,16 @@ textarea {
     .aboutUpper p {
         margin-top: 10px;
         line-height: 28px;
-        width: 90%;
+        width: 92%;
         text-align: center;
     }
 
     .removeOnMobile {
         display: none;
+    }
+
+    .contactz h1 {
+        color: #fff;
     }
 
     .contactForm {
@@ -838,7 +918,7 @@ textarea {
     }
     
     .contactForm input[type=email] {
-        width: 400px;
+        width: 300px;
         height: 30px;
         padding: 15px;
         margin-top: 30px;
@@ -847,13 +927,13 @@ textarea {
     }
 
     .contactForm input[type=submit] {
-        width: 400px;
+        width: 300px;
         height: 50px;
         font-size: 20px;
     }
     
     .resizer {
-        width: 400px;
+        width: 300px;
     }
     
     .contactInfo {
@@ -863,5 +943,177 @@ textarea {
     .myContact {
         width: 100%;
     }
+}
 
+@media screen and (max-width: 415px) {
+
+    .mobileNavLower {
+        width: 100%;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobileNavLower div a{
+        margin-left: 12%;
+        min-width: 150px;
+        font-size: 22px;
+    }
+
+    #subSection {
+        text-align: left;
+    }
+
+    .upperLeftNav {
+        height: 20vh;
+        min-width: 28%;
+        flex: 1;
+        /* background: red; */
+    }
+
+    .upperMidNav {
+        height: 20vh;
+        min-width: 38%;
+        flex: 1;
+        /* background: blue; */
+    }
+    
+    .upperMidNav a {
+        display: flex;
+        flex-direction: column; 
+        /* background: green;   */
+    }
+
+    .upperMidNav a .logoUp {
+        width: 100%;
+        height: 9vh;
+        background: url("images/logo.jpg") no-repeat;
+        background-size: contain;
+        background-size: 40%;
+        background-position: center;
+        background-position-y: 10px;
+    }
+
+    .upperMidNav a .logoDown {
+        width: 100%;
+        height: 5vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        /* background: teal; */
+    }
+
+    .logoDown h5 {
+        margin: auto;
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 22px;
+        color: #197195;
+    }
+
+    .contactForm input[type=email] {
+        width: 300px;
+        height: 30px;
+        padding: 15px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        font-family: 'Quicksand', sans-serif;
+    }
+
+    .contactForm input[type=submit] {
+        width: 300px;
+        height: 50px;
+        font-size: 20px;
+    }
+    
+    .resizer {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 376px) {
+
+    .mobileNavLower {
+        width: 100%;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        /* background-color: blue; */
+    }
+
+    .mobileNavLower div a{
+        margin-left: 12%;
+        min-width: 150px;
+        font-size: 22px;
+    }
+
+    .upperLeftNav {
+        height: 20vh;
+        min-width: 25%;
+        flex: 1;
+        /* background: red; */
+    }
+
+    .upperMidNav {
+        height: 20vh;
+        min-width: 40%;
+        flex: 1;
+        /* background: blue; */
+    }
+    
+    .upperMidNav a {
+        display: flex;
+        flex-direction: column; 
+        /* background: green;   */
+    }
+
+    .upperMidNav a .logoUp {
+        width: 100%;
+        height: 9vh;
+        background: url("images/logo.jpg") no-repeat;
+        background-size: contain;
+        background-size: 40%;
+        background-position: center;
+        background-position-y: 10px;
+    }
+
+    .upperMidNav a .logoDown {
+        width: 100%;
+        height: 5vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        /* background: teal; */
+    }
+
+    .logoDown h5 {
+        margin: auto;
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 22px;
+        color: #197195;
+    }
+
+    .contactForm input[type=email] {
+        width: 300px;
+        height: 30px;
+        padding: 15px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        font-family: 'Quicksand', sans-serif;
+    }
+
+    .contactForm input[type=submit] {
+        width: 300px;
+        height: 50px;
+        font-size: 20px;
+    }
+    
+    .resizer {
+        width: 300px;
+    }
 }
